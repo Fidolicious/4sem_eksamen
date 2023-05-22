@@ -3,6 +3,23 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+h1{
+  font-size: 34px;
+  font-weight: 700;
+}
+h2{
+  font-size: 20px;
+  font-weight: 500;
+}
+h3{
+  font-size: 14px;
+  font-weight: 400;
+}
+p {
+  font-size: 14px;
+  font-weight: 200;
+}
+
 
 :root{
         /* Grønne toner */
@@ -34,6 +51,7 @@
   background-image: url("../img/background_white.png");
   background-position: center;
   height:100%;
+  background-size: cover;
 }
 
 .logo{
@@ -77,6 +95,7 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
+    align-items: center;
 }
 .btnText {
     color: var(--white);
