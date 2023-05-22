@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/index_javascript.js"></script>
+    <script src="javascript/navbar_javascript.js"></script>
     <link rel="stylesheet" href="stylesheet/style.css">
     <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +13,38 @@
 </head>
     <body>
 
+        <header>
+            <div class="burger-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="menu">
+              <div class="menu-header">
+                <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
+              </div>
+              <ul>
+                <li><i class="fa fa-solid fa-house"></i><a href="#index.html">Hjem</a></li>
+                <li><i class="fa fa-solid fa-table-cells-large"></i><a href="#">Overblik</a></li>
+                <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+                <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
+              </ul>
+              <div class="profileFlex">
+                <i class="profile1 fa-regular fa-user"></i>
+                <div class="profile2">
+                   <a class="profileName" href="#">Malene Mortensen</a>
+                    <p>Bronze</p>
+                    <p>235 Points</p>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+        <div class="background">
+            <h1>Belønninger</h1>
+        </div>
+
+        <div class="whiteBackground">
 <!-- Klar til brug -->
-        <h2 class="underOverskrift">Klar til brug</h2>
+        <h1 class="underOverskrift">Klar til brug</h1>
         <div class="rewardBox1 color1">
             <h3 class="rewardText activeText">Gratis Brillerens</h3>
             <i class="fa-solid fa-circle-check"></i>
@@ -37,7 +67,7 @@
         </div>
 
 <!-- Tjen hurtige point -->
-        <h2 class="underOverskrift">Du er der snart</h2>
+        <h1 class="underOverskrift">Du er der snart</h1>
         <div class="rewardBox color1">
             <div class="rewardGrid">
               <h3 class="boxText1 activeText">Gratis Pudseklud</h3>
@@ -67,14 +97,14 @@
           </div>
 
 <!-- Tjen hurtige points -->
-        <h2 class="underOverskrift">Tjen hurtige points</h2>
+        <h1 class="underOverskrift">Tjen hurtige points</h1>
         <div class="rewardBox1 color1">
             <div class="rewardGrid">
                 <h3 class="rewardText activeText">Henvis en ven</h3>
                 <p class="rewardText">Tjen 500 points</p>
             </div>
             <div class="rewardGrid2">
-                <i class="fa-regular fa-circle"></i>
+                <div class="circle"></div>
             </div>
         </div>
         <div class="rewardBox1 color2">
@@ -83,7 +113,7 @@
                 <p class="rewardText">Tjen 150 points</p>
             </div>
             <div class="rewardGrid2">
-                <i class="fa-regular fa-circle"></i>
+                <div class="circle"></div>
             </div>
         </div>
         <div class="rewardBox1 color3">
@@ -92,7 +122,7 @@
                 <p class="rewardText">Tjen 150 points</p>
             </div>
             <div class="rewardGrid2">
-                <i class="fa-regular fa-circle"></i>
+                <div class="circle"></div>
             </div>
         </div>
         <div class="rewardBox1 color1">
@@ -101,8 +131,11 @@
                 <p class="rewardText">Tjen 300 points</p>
             </div>
             <div class="rewardGrid2">
-                <i class="fa-regular fa-circle"></i>
+                <div class="circle"></div>
             </div>
         </div>
+        <footer></footer>
+    </div>
+
     </body>
 </html>

@@ -149,11 +149,8 @@ header {
     border-radius: 15px;
   }
 
-  .bar {
-    width: 20px;
-    height: 2px;
-    background-color: #fff;
-    transition: all 0.2s ease;
+  .fa-bars{
+    font-size: 20px;
   }
 
   .menu {
@@ -271,18 +268,22 @@ header {
 
   .fa-circle-play{
     font-size: 30px;
-    color: var(--deepGreen);
+    color: var(--midGreen);
   }
 
   .activeText{
-    font-weight: 600;
+    font-weight: 700;
   }
   .activeTextGreen{
-    font-weight: 600;
+    font-weight: 700;
     color: var(--deepGreen);
   }
   .underOverskrift {
-    margin: 20px;
+    display: block;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--deepBlue);
   }
 
   .rewardGrid2 {
@@ -379,8 +380,16 @@ header {
 }
 
 .rewardText {
-  margin-left: 10px;
-}
+  margin-left: 10px;}
+
+
+  .circle {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border-color: var(--deepGreen);
+    border-style: dashed;
+  }
 
 /* FOOTER */
 footer {
