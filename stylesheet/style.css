@@ -8,19 +8,23 @@ h1{
   font-weight: 700;
   text-align: center;
   display: inline-block;
+  color: var(--deepBlue);
 }
 h2{
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  color: var(--deepBlue);
 }
 h3{
   font-size: 14px;
   font-weight: 500;
+  color: var(--deepBlue);
 }
 p {
   font-size: 14px;
   font-weight: 200;
+  color: var(--deepBlue);
 }
 
 
@@ -84,7 +88,7 @@ p {
     margin: 10px;
     padding: 30px 10px;
     border-radius: 20px;
-    margin: 40px 20px;
+    margin: 30px 20px;
 }
 .boxText{
     text-align: center;
@@ -247,7 +251,7 @@ header {
 
   .rewardBox{
     margin: 10px;
-    padding: 30px 10px;
+    padding: 30px 20px;
     border-radius: 20px;
     margin: 20px 20px;
     display: flex;
@@ -272,7 +276,10 @@ header {
   .activeText{
     font-weight: 600;
   }
-
+  .activeTextGreen{
+    font-weight: 600;
+    color: var(--deepGreen);
+  }
   .underOverskrift {
     margin: 20px;
   }
