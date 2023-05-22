@@ -49,6 +49,11 @@ p {
     height: 260px;
     z-index: -10;
 }
+.overskriftCentreret{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .whiteBackground{
   background-color: var(--white);
   border-radius: 35px 35px 0 0;
