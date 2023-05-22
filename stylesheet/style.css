@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+        --yellow: #FFF5D8;
+        --lightGreen: #E4FAEE;
+        --ligtRed: #FDEFEF;
+        --lightBlue: #E5F0FF;
+        --buttonYellow: #E3C15C;
+        --buttonGreen: #C0E8C8;
+        --bTextGreen:#54845E;
+        --headerColor: #FFF;
+        --textColor: #000;
+        --textGrey: #9D9EA3;
+        --textRed: #F18C8E;
+        --textBlue: #305F72;
+}
+
+.landingBackground{
+    background-color: var(--bTextGreen);
+    border-radius: 0 0 35px 35px;
+    height: 260px;
+}
+
+.logo{
+    width: 270px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.maskot{
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    z-index:2
+}
+
+
+
+.landingBox {
+    background-color: var(--yellow);
+    margin: 10px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    margin: 40px 20px;
+}
+.boxText{
+    text-align: center;
+    color: var(--textBlue);
+}
+.btn {
+    display: flex;
+    background-color: var(--buttonYellow);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    margin-top: 10px !important;
+}
+.loginBtn{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.btnText {
+    color: var(--headerColor);
+    font-weight: 600;
+}
+.loginArrow{
+    color: var(--headerColor);
+    
+}
+.landingText{
+    color: var(--textGrey);
+    text-align: center;
+    font-size: 12px;
+    margin: 40px 20px;
+}
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px;
+    color: #fff;
+    float: right;
+  }
+  
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    background-color: var(--bTextGreen);
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  .menu {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bTextGreen);
+    z-index: 1;
+    transition: all 0.2s ease;
+  }
+  
+  .menu.show {
+    top: 0;
+  }
+  
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .back-btn {
+    background-color: var(--buttonGreen);
+    padding: 10px;
+    border-radius: 15px;
+  }
+  
+  .menu-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .fa {
+    margin-right: 10px;
+  }
+
+  .profileFlex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .profile1{
+    font-size: 35px;
+    margin-right: 15px;
+  }
+
+  .menu li.active {
+    font-weight: 600;
+    background-color: var(--buttonGreen);
+    padding: 10px;
+    width: 150px;
+    border-radius: 15px;
+  }
+
+  .profileName{
+    font-weight: 600;
+  }
