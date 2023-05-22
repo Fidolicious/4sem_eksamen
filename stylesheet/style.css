@@ -25,12 +25,15 @@
 /* Landingpage */
 
 .landingBackground{
-    /* background-color: var(--deepGreen); */
     background-image: url("../img/background.png");
     background-position: center;
     border-radius: 0 0 35px 35px;
     height: 260px;
-
+}
+.backgroundWhite{
+  background-image: url("../img/background_white.png");
+  background-position: center;
+  height:100%;
 }
 
 .logo{
