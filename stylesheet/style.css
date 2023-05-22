@@ -291,3 +291,24 @@ header {
   .procenter {
     margin: 10px;
   }
+
+
+  /* Belønninger */
+  .fa-circle-check, .fa-circle{
+    font-size: 30px;
+    color: var(--midGreen);
+  }
+
+  .rewardBox1 {
+    margin: 10px;
+    padding: 30px 10px;
+    border-radius: 20px;
+    margin: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rewardText {
+    margin-left: 10px;
+  }
