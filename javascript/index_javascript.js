@@ -1,3 +1,4 @@
+// Navigations menu
 document.addEventListener('DOMContentLoaded', () => {
     const burgerIcon = document.querySelector('.burger-icon');
     const menu = document.querySelector('.menu');
@@ -18,14 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const menuLinks = document.querySelectorAll('.menu li');
 
-menuLinks.forEach((link) => {
-  link.addEventListener('click', () => {
     menuLinks.forEach((link) => {
-      link.classList.remove('active');
+      link.addEventListener('click', () => {
+        menuLinks.forEach((link) => {
+          link.classList.remove('active');
+        });
+        link.classList.add('active');
+      });
     });
-    link.classList.add('active');
-  });
-});
     
   });
 
