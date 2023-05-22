@@ -49,8 +49,9 @@ p {
 }
 .backgroundWhite{
   background-image: url("../img/background_white.png");
-  background-position: center;
   height:100%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
