@@ -102,6 +102,7 @@ p {
     border: none;
     border-radius: 15px;
     width: 150px;
+    text-decoration: none;
     margin-top: 10px !important;
 }
 .loginBtn{
@@ -166,6 +167,7 @@ header {
 
   .menu.show {
     top: 0;
+    position: fixed;
   }
 
   .menu-header {
@@ -179,6 +181,12 @@ header {
     background-color: var(--midGreen);
     padding: 10px;
     border-radius: 15px;
+  }
+  .back-btn2 {
+    background-color: var(--midGreen);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 35px;
   }
 
   .menu-title {
@@ -223,6 +231,10 @@ header {
   .profile1{
     font-size: 35px;
     margin-right: 15px;
+  }
+
+  .profileTxt{
+    color: var(--white);
   }
 
   .menu li.active {
@@ -374,9 +386,14 @@ header {
 }
 
 /* Belønninger */
-.fa-circle-check, .fa-circle{
+.rewardHeader{
+  margin-top: 60px;
+  display: block;
+}
+.fa-circle-check{
   font-size: 30px;
   color: var(--midGreen);
+  margin-right: 10px;
 }
 
 .rewardBox1 {
@@ -399,9 +416,106 @@ header {
     height: 30px;
     border-color: var(--deepGreen);
     border-style: dashed;
+    margin-right: 10px;
   }
 
 /* FOOTER */
 footer {
   height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 20% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  border-radius: 20px;
+}
+
+.modal-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fa-spray-can-sparkles, .fa-glasses {
+  font-size: 70px;
+  margin-top: 40px;
+}
+
+.modal-overskrift{
+  text-align: start;
+  margin-top: 20px;
+}
+
+.greenBtn {
+  display: block;
+  background-color: var(--lightGreen);
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 20px !important;
+  width: 100%;
+  text-align: center;
+}
+
+.greenBtnTxt{
+  color: var(--deepGreen);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
