@@ -26,10 +26,11 @@
 
 .landingBackground{
     /* background-color: var(--deepGreen); */
+    background-image: url("../img/background.png");
+    background-position: center;
     border-radius: 0 0 35px 35px;
     height: 260px;
-    background-image: url("img/background.png");
-    overflow: hidden;
+
 }
 
 .logo{
@@ -38,6 +39,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+    z-index: 1;
 }
 .maskot{
     width: 150px;
@@ -45,7 +47,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
-    z-index:2
+    z-index: 2;
 }
 
 .landingBox {
