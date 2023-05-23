@@ -66,6 +66,9 @@ p {
   margin: -20% 0 0 0;
   width: 100%;
 }
+#whiteBackgroundShort{
+  height: auto;
+}
 
 .logo{
     width: 270px;
@@ -309,10 +312,7 @@ header {
   color: var(--deepBlue);
   width:85%;
   padding-left:10px;
-  margin-bottom:30px;
-  opacity: 1;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  margin-bottom:40px;
 }
 .read-more{
   display: none;
