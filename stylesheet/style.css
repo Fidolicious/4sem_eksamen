@@ -28,6 +28,14 @@ p {
   color: var(--deepBlue);
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 
 :root{
         /* Grønne toner */
@@ -44,6 +52,7 @@ p {
         --lightYellow: #FFF5E5;
         /* Andre farver */
         --white: #FFF;
+        --lineGrey: #EEEEEE;
 }
 
 
@@ -199,17 +208,20 @@ header {
     flex-grow: 1;
   }
 
+  .navContainer {
+    text-align: center;
+  }
+
   .menu ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    text-align: left;
+    display: inline-block;
   }
 
   .menu li {
     display: flex;
     padding: 10px;
     align-items: center;
-    justify-content: center;
     margin-top: 20px;
   }
 
@@ -243,10 +255,7 @@ header {
   .menu li.active {
     font-weight: 600;
     background-color: var(--midGreen);
-    padding: 10px;
-    margin: 0px 40px;
     border-radius: 15px;
-    margin-top: 20px;
   }
 
   .profileName{
@@ -430,6 +439,48 @@ footer {
 
 
 
+/* Overblik */
+.overblik {
+  margin: 20px;
+}
+.overblikList {
+  margin: 30px 0px;
+  display: flex;
+  align-items: center;
+}
+.greenBtn {
+  background-color: var(--lightGreen);
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px !important;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colorCircle {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.greenArrow {
+  color: var(--deepGreen);
+}
+hr {
+  border-top: var(--lineGrey);
+}
+
+.overblikTitel {
+  text-align: left;
+}
+
+
+
+
 
 
 
@@ -480,9 +531,16 @@ footer {
   justify-content: space-evenly;
 }
 
-.fa-spray-can-sparkles, .fa-glasses {
+.fa-spray-can-sparkles{
   font-size: 70px;
   margin-top: 40px;
+}
+
+.fa-glasses {
+  font-size: 70px;
+  margin-top: 40px;
+  --fa-rotate-angle: 30deg;
+  color: var(--deepGreen);
 }
 
 .modal-overskrift{
@@ -490,7 +548,7 @@ footer {
   margin-top: 20px;
 }
 
-.greenBtn {
+.greenBtnModal {
   display: block;
   background-color: var(--lightGreen);
   padding: 10px;
@@ -519,4 +577,18 @@ footer {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+
+
+
+#qrCodeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
 }
