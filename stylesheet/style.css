@@ -116,7 +116,9 @@ h4{
 }
 
 /* Landingpage */
-
+#landingBack{
+  margin-bottom: 50px;
+}
 .background{
     background-image: url("../img/Bubbles.png");
     background-color: var(--deepGreen);
@@ -832,7 +834,7 @@ form span{
 
 .interest {
   display: flex;
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
   padding: 10px;
   margin-top: 20px;
   justify-content: space-around;
@@ -850,7 +852,7 @@ form span{
 }
 
 .intMails {
-  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
   padding: 10px;
 }
 
