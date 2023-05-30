@@ -874,6 +874,18 @@ hr {
 form span {
   display: block;
 }
+input .checkboxSquare {
+  height: 20px;
+  width: 20px;
+  border: 5px;
+  margin-left: 10px;
+}
+.checkboxSquare{
+  height: 20px;
+  width: 20px;
+  border: 5px;
+  margin-left: 10px;
+}
 
 .interest {
   display: flex;
@@ -902,4 +914,5 @@ form span {
 .vilkr {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
