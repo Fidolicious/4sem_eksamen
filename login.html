@@ -29,28 +29,33 @@
       <img class="loginLogo image" src="img/logo.png" alt="Logo">
       <img class="loginMaskot image" src="img/Maskot til Brillebaren 1.png" alt="Maskot">
     </div>
-    <p class="loginCenterTxt">Ingen konto endnu? <a class="loginCenterTxt" href="opret.html">Opret konto.</a></p>
-
     <form class="loginForm">
       <label class="inputLabel">E-mail</label>
       <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
       <br>
       <label class="inputLabel">Password</label>
       <input type="password" class="form-control" name="password" placeholder="Skriv din adgangskode" required="">
-      <a class="forgotPassword" href="#">Glemt dit password?</a>
+      <a class="forgotPassword" href="#">Glemt dit password?</a><br>
+      <p>Ingen konto endnu? <a class="loginCenterTxt" href="opret.html">Opret konto.</a></p>
       <button class="btn greenLoginBtn greenBtn" type="submit" onclick="login()">
         <p class="activeTextGreen greenBtnTxt">Log ind</p>
         <i class="fa-solid fa-arrow-right greenArrow"></i>
       </button>
       <span class="loginCenterTxt txtLine"> Eller anvend </span>
-      <div class="socialLinks">
+      <div class="sociallogin">
+        <button class="otherLogin" href="#typografi_klik"><img src="img/google.png" alt="google logo"></button>
+        <button class="otherLogin" href="#typografi_klik"><img src="img/facebook.png" alt="facebook logo"></button>
+
+      </div>
+
+      <!-- <div class="socialLinks">
         <a class="googleLog" href="#">
           <i class=" googleLink fa-brands fa-google"></i>
         </a>
         <a class="fbLog" href="#">
           <i class=" fbLink fa-brands fa-facebook-f"></i>
         </a>
-      </div>
+      </div> -->
     </form>
 
     <!-- Footer -->

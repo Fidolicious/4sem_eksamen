@@ -200,12 +200,30 @@ h4 {
   margin-top: 10px !important;
   margin: auto;
 }
-
+.sociallogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .loginBtn {
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
+}
+.otherLogin {
+  background-color: var(--midYellow);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 162.5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px !important;
+}
+.otherLogin img {
+  width: 80px;
+  height: auto;
 }
 
 .btnText {
@@ -564,7 +582,7 @@ footer {
   border-radius: 15px;
   text-decoration: none;
   margin-top: 30px !important;
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: flex;
   justify-content: space-around;
