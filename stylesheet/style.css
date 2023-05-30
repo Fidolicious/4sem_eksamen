@@ -47,10 +47,16 @@ span {
 /* a {
   text-decoration: none;
 } */
+.greenLink {
+  color: var(--deepGreen);
+  text-decoration: underline;
+  font-weight: 400;
+}
 li {
   list-style: none;
   text-decoration: none;
 }
+
 
 :root {
   /* Grønne toner */
@@ -192,6 +198,7 @@ h4 {
   width: 150px;
   text-decoration: none;
   margin-top: 10px !important;
+  margin: auto;
 }
 
 .loginBtn {
@@ -343,9 +350,9 @@ header {
 /* Index page */
 .btnIndex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px !important;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px !important;
 }
 
 .rewardBox {
@@ -421,7 +428,7 @@ header {
 
 .faq {
   width: 100%;
-  margin: 40px auto;
+  margin: 40px auto 20px auto;
   position: relative;
 }
 
@@ -469,7 +476,11 @@ header {
   font-weight: 400;
   color: var(--deepGreen) !important;
 }
-
+.mereInfo {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
 /* Belønninger */
 .rewardHeader {
   margin-top: 60px;
@@ -509,7 +520,7 @@ header {
 
 /* FOOTER */
 footer {
-  height: 25px;
+  height: 35px;
 }
 
 /* Overblik */
