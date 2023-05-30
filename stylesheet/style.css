@@ -225,24 +225,34 @@ h4 {
 }
 
 /* Menu */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  padding: 20px 20px 0 0;
-  color: #fff;
-  float: right;
-}
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 20px 0 0;
+    color: #fff;
+    float: right;
+    flex-direction: row-reverse;
+    width: 90%;
+  }
 
-.burger-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  background-color: var(--deepGreen);
-  padding: 10px;
-  border-radius: 15px;
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    background-color: var(--deepGreen);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  .backPage {
+    background-color: var(--deepGreen);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 15px;
 }
 
 .fa-bars {
@@ -347,13 +357,27 @@ header {
   font-weight: 600;
 }
 
-/* Index page */
-.btnIndex {
-  display: flex;
-      justify-content: space-around;
-      align-items: center;
-      margin-top: 20px !important;
-}
+
+
+  /* Back Header */
+  .loginHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 20px 20px 0 0;
+    color: #fff;
+    float: right;
+    width: 90%;
+  }
+
+  /* Index page */
+  .btnIndex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px !important;
+  }
 
 .rewardBox {
   margin: 10px;
@@ -393,6 +417,7 @@ header {
 
 .rewardGrid2 {
   display: flex;
+  align-items: center;
 }
 
 .procenter {
@@ -605,6 +630,7 @@ hr {
 
 .greenBtnTxt {
   color: var(--deepGreen);
+  font-weight: 700;
 }
 
 .qrCode {
@@ -631,7 +657,6 @@ hr {
   background-color: transparent;
   margin: 15% auto;
   padding: 20px;
-  width: 80%;
   max-width: 500px;
   animation: modalfade 0.3s;
 }
@@ -673,6 +698,7 @@ hr {
   font-weight: bold;
   border-radius: 20px;
   padding: 20px;
+  width: 90%;
 }
 
 .card-back {
@@ -686,7 +712,70 @@ hr {
   border-radius: 20px;
   padding: 20px;
   transform: rotateY(180deg);
+  width: 90%;
 }
+
+.greenBtn2 {
+  background-color: var(--lightGreen);
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  margin-top: 30px !important;
+  width: 100%;
+
+}
+
+.rewardActivatet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.activatetTxt {
+  font-weight: 800;
+  color: var(--deepGreen);
+}
+
+.fChekmark {
+  color: var(--deepGreen);
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--midGreen);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.fa-arrow-left {
+  font-size: 20px;
+  color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Login */
 .loginLogo {

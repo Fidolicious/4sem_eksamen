@@ -30,3 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
   });
 
+  // Back button
+  function goBack() {
+    window.history.back();
+  }
