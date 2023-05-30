@@ -13,10 +13,11 @@
     <title>Belønninger</title>
 </head>
     <body>
-      <header>
+      <header class="navHeader">
         <div class="burger-icon">
             <i class="fa-solid fa-bars"></i>
         </div>
+        <div class="backPage" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
         <nav class="menu">
           <div class="menu-header">
             <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
@@ -26,7 +27,7 @@
                 <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
                 <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
                 <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
-                <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
+                <li><i class="fa fa-regular fa-circle-question"></i><a href="faq.html">Hjælp</a></li>
             </ul>
           </div>
           
@@ -41,6 +42,7 @@
         </nav>
     </header>
 
+
         <div class="background">
             <br>
             <h1 class="rewardHeader">Belønninger</h1>
@@ -49,23 +51,23 @@
         <div class="whiteBackground">
 <!-- Klar til brug -->
         <h1 class="underOverskrift">Klar til brug</h1>
-        <button onclick="openModal()" class="rewardBox1 colorful-div">
+        <button onclick="openModal()" class="rewardBox1 colorful-div color1">
             <h3 class="rewardText activeText">Gratis Brillerens</h3>
             <i class="fa-solid fa-circle-check"></i>
         </button>
-        <button class="rewardBox1 colorful-div">
+        <button class="rewardBox1 colorful-div color2">
             <h3 class="rewardText activeText">10% rabat på næste køb</h3>
             <i class="fa-solid fa-circle-check"></i>
         </button>
-        <button class="rewardBox1 colorful-div">
+        <button class="rewardBox1 colorful-div color3">
             <h3 class="rewardText activeText">En kop gratis kaffe</h3>
             <i class="fa-solid fa-circle-check"></i>
         </button>
-        <button class="rewardBox1 colorful-div">
+        <button class="rewardBox1 colorful-div color1">
             <h3 class="rewardText activeText">Køb 3 betal for 2</h3>
             <i class="fa-solid fa-circle-check"></i>
         </button>
-        <button class="rewardBox1 colorful-div">
+        <button class="rewardBox1 colorful-div color2">
             <h3 class="rewardText activeText">Fri fragt af linser</h3>
             <i class="fa-solid fa-circle-check"></i>
         </button>
@@ -144,27 +146,36 @@
   <div class="modal-content">
       <div class="card" id="card">
           <div class="card-face card-front">
+            <button class="close-btn" onclick="closeModal()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
               <div class="modal-icons">
                   <i class="fa-solid fa-spray-can-sparkles"></i>
                   <i class="fa-solid fa-glasses fa-rotate-by"></i>
               </div>
               <h2 class="modal-overskrift">Gratis brillerens</h2>
-              <p>Udløber 01-07-2023</p>
+              <p class="modalTxt">Udløber 01-07-2023</p>
               <br>
-              <p>En gratis spray brillerens, som kan afhentes i Brillebaren</p>
-              <button class="greenBtn" onclick="flipCard()">
+              <p class="modalTxt">En gratis spray brillerens, <br> som kan afhentes i Brillebaren</p>
+              <button class="greenBtn2" id="startAnimationButton" onclick="flipCard()">
                   <p class="greenBtnTxt">Aktiver Belønning</p>
               </button>
           </div>
           <div class="card-face card-back">
+            <button class="close-btn" onclick="closeModal()">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
               <img class="qrCode" src="img/qr-code.png" alt="qr-code">
               <h2 class="modal-overskrift">Gratis brillerens</h2>
-              <p>Udløber 01-07-2023</p>
+              <p class="modalTxt">Udløber 01-07-2023</p>
               <br>
-              <p>En gratis spray brillerens, som kan afhentes i Brillebaren</p>
-              <button class="greenBtn">
-                  <p class="greenBtnTxt">Aktiveret</p>
-              </button>
+              <p class="modalTxt">En gratis spray brillerens, <br> som kan afhentes i Brillebaren</p>
+                  
+              <div class="rewardActivatet">
+                <h2 class="activatetTxt">Aktiveret</h2>
+                <i class="fChekmark fa-solid fa-check"></i>
+              </div>
+
           </div>
       </div>
   </div>
