@@ -11,6 +11,13 @@ h1{
   color: var(--white);
   padding: 0 20px 0 20px;
 }
+.underOverskrift {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 900;
+  color: var(--deepBlue);
+}
 h2{
   font-size: 20px;
   font-weight: 600;
@@ -55,6 +62,54 @@ li {
         --lineGrey: #EEEEEE;
 }
 
+/* Styleguide */
+.styleguide_textarea {
+  width: 95%;
+  height: 100px;
+  overflow: scroll;
+}
+.btnStyleguideMenu{
+  background-color: var(--deepYellow);
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 140px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px !important;
+}
+.btnStyleguide {
+    background-color: var(--deepYellow);
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px !important;
+    margin-bottom: 30px;
+}
+.btnStyleguide:hover {
+    background-color: var(--midGreen);
+    color: var(--white);
+    font-weight: 600;
+}
+h4{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  color: var(--deepBlue);
+}
+.styleguide_overskrift{
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  display: inline-block;
+  color: var(--deepBlue);
+  padding: 0 20px 0 20px;
+  margin: 30px 0 10px 0;
+  text-decoration: underline;
+}
 
 /* Landingpage */
 
@@ -117,6 +172,7 @@ li {
     text-decoration: none;
     margin-top: 10px !important;
 }
+
 .loginBtn{
     display: flex;
     margin: auto;
@@ -301,13 +357,6 @@ header {
   .activeTextGreen{
     font-weight: 700;
     color: var(--deepGreen);
-  }
-  .underOverskrift {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 900;
-    color: var(--deepBlue);
   }
 
   .rewardGrid2 {

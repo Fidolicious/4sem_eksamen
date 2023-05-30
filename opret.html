@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript/navbar_javascript.js"></script>
+    <script src="javascript/date.js"></script>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Opret konto</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="menu">
+            <div class="menu-header">
+                <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+            <div class="navContainer">
+                <ul class="navbar">
+                    <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
+                    <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
+                    <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+                    <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
+                </ul>
+            </div>
+
+            <div class="profileFlex">
+                <i class="profile1 fa-regular fa-user"></i>
+                <div class="profile2">
+                    <a class="profileName" href="#">Malene Mortensen</a>
+                    <p class="profileTxt">Bronze</p>
+                    <p class="profileTxt">235 Points</p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="background">
+        <br>
+        <h1 class="rewardHeader">Tilmeld dig her</h1>
+    </div>
+
+    <div class="whiteBackground">
+
+        <form class="loginForm">
+            <label class="inputLabel">Email</label>
+            <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+            <br>
+            <label class="inputLabel">Fornavn</label>
+            <input type="password" class="form-control" name="password" placeholder="Skriv dit fornavn" required="">
+            <br>
+            <label class="inputLabel">Efternavn</label>
+            <input type="text" class="form-control" name="username" placeholder="Skriv dit efternavn" required="">
+            <br>
+            <label class="inputLabel">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Skriv en adgangskode" required="">
+            <br>
+            <label class="inputLabel">Password</label>
+            <input type="password" class="form-control" name="password" placeholder="Gentag adgangskode" required="">
+
+                <div class="dateForm">
+                    <span>
+                        <label for="day">Dag</label>
+                        <select class="day" name="day" id="day"></select>
+                    </span>
+                    <span >
+                        <label for="month">Måned</label>
+                        <select class="month" name="month" id="month"></select>
+                    </span>
+                    <span>
+                        <label for="year">År</label>
+                        <select class="year" name="year" id="year"></select>
+                    </span>
+                </div>
+
+            <div class="interest">
+                <label class="interestbox">
+                    <span class="checkTxt">Briller</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+                <label class="interestbox">
+                    <span class="checkTxt">Solbriller</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+                <label class="interestbox">
+                    <span class="checkTxt">Linser</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+            </div>
+            <br><br>
+            <div class="intMails">
+                <label class="sendMails">
+                    <span class="checkTxt">Rabatter og tilbud</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+                <label class="sendMails">
+                    <span class="checkTxt">Nye produkter</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+                <label class="sendMails">
+                    <span class="checkTxt">Dine kuponer</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+                <label class="sendMails">
+                    <span class="checkTxt">Samarbejdspartnere</span>
+                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                </label>
+            </div>
+            <br><br>
+
+            <label class="vilkr">
+                <p>Ved at lave en konto acceptere du vores <br> <a href="#">Vilkår & betingelser</a> og <a href="#">Privathedspolitik</a></p>
+                <input type="checkbox" value="vilkr" class="rememberMe" name="vilkr">
+            </label>
+
+            <span class="loginCenterTxt txtLine"> Eller anvend </span>
+
+            <div class="socialLinks">
+                <a class="googleLog" href="#">
+                    <i class=" googleLink fa-brands fa-google"></i>
+                </a>
+                <a class="fbLog" href="#">
+                    <i class=" fbLink fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+
+            <button class="btn greenLoginBtn greenBtn" type="submit">
+                <p class="activeTextGreen greenBtnTxt">Opret Konto</p>
+                <i class="fa-solid fa-arrow-right greenArrow"></i>
+            </button>
+        </form>
+
+<!-- Footer -->
+        <footer></footer>
+    </div>
+</body>
+</html>
