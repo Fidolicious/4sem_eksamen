@@ -13,8 +13,33 @@
     <title>Opret konto</title>
 </head>
 <body>
-    <header class="loginHeader">
-        <div class="backPage" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+    <!-- Navbar -->
+    <header>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="menu">
+            <div class="menu-header">
+                <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+            <div class="navContainer">
+                <ul class="navbar">
+                    <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
+                    <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
+                    <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+                    <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
+                </ul>
+            </div>
+
+            <div class="profileFlex">
+                <i class="profile1 fa-regular fa-user"></i>
+                <div class="profile2">
+                    <a class="profileName" href="#">Malene Mortensen</a>
+                    <p class="profileTxt">Bronze</p>
+                    <p class="profileTxt">235 Points</p>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="background">
@@ -58,41 +83,41 @@
             <div class="interest">
                 <label class="interestbox">
                     <span class="checkTxt">Briller</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
                 <label class="interestbox">
                     <span class="checkTxt">Solbriller</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
                 <label class="interestbox">
                     <span class="checkTxt">Linser</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
             </div>
             <br><br>
             <div class="intMails">
                 <label class="sendMails">
                     <span class="checkTxt">Rabatter og tilbud</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
                 <label class="sendMails">
                     <span class="checkTxt">Nye produkter</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
                 <label class="sendMails">
                     <span class="checkTxt">Dine kuponer</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
                 <label class="sendMails">
                     <span class="checkTxt">Samarbejdspartnere</span>
-                    <input type="checkbox" value="remember-me" class="rememberMe" name="rememberMe">
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
                 </label>
             </div>
             <br><br>
 
             <label class="vilkr">
                 <p>Ved at lave en konto acceptere du vores <a class="greenLink" href="#">Vilkår & betingelser</a> og <a class="greenLink" href="#">Privathedspolitik</a></p>
-                <input type="checkbox" value="terms" class="rememberMe" name="terms">
+                <input type="checkbox" value="terms" class="checkboxSquare" name="terms">
             </label>
 
             <span class="loginCenterTxt txtLine"> Eller anvend </span>
