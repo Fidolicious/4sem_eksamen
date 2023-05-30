@@ -35,9 +35,13 @@ p {
   color: var(--deepBlue);
 }
 
-a {
-  text-decoration: none;
+span {
+  color: var(--deepBlue);
 }
+
+/* a {
+  text-decoration: none;
+} */
 
 li {
   list-style: none;
@@ -600,8 +604,8 @@ hr {
 .qrCode {
   width: 200px;
   display: block;
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -677,4 +681,180 @@ margin-right: auto;
   border-radius: 20px;
   padding: 20px;
   transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Login */
+.loginLogo {
+  width: 220px;
+  padding-bottom: 20px;
+}
+.loginMaskot {
+  width: 100px;
+}
+.loginImg {
+  padding: 20px;
+  text-align: center;
+}
+
+.loginForm {
+  padding: 20px;
+  display: grid;
+}
+
+.inputLabel {
+  margin-bottom: 10px;
+}
+	.checkbox {
+	  margin-bottom: 30px;
+    display: flex;
+    color: var(--deepBlue);
+	}
+
+  .rememberMe {
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px;
+  }
+
+  .loginCheck {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .forgotPassword {
+    text-decoration: none;
+  }
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  padding: 10px;
+    border-radius: 10px;
+    border-color: var(--lineGrey);
+    border-width: 1px;
+	}
+
+  .loginCenterTxt {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--deepBlue);
+  }
+
+  .txtLine:after,
+  .txtLine:before{
+      content:"\00a0\00a0\00a0\00a0\00a0";
+      text-decoration:line-through;
+  }
+
+  .socialLinks{
+    display: flex;
+    justify-content: center;
+  }
+
+  .fbLog, .googleLog {
+    background-color: var(--lightYellow);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: none;
+    text-align: center;
+    line-height: 80px;
+    margin: 20px;
+  }
+
+.googleLink, .fbLink {
+  color: var(--deepYellow);
+  font-size: 30px;
+}
+
+::placeholder {
+  opacity: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------Opret konto------------------------ */
+.dateForm{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.year, .month, .day {
+  padding: 10px;
+  width: 100%;
+  border-color: var(--lineGrey);
+  border-radius: 10px;
+}
+
+form span{
+    display: block;
+}
+
+.interest {
+  display: flex;
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  padding: 10px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.interestbox {
+  display: flex;
+    color: var(--deepBlue);
+}
+
+.sendMails {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.intMails {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+  padding: 10px;
+}
+
+.vilkr {
+  display: flex;
+  justify-content: space-between;
 }

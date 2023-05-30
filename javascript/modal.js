@@ -17,3 +17,22 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
+
+ // Get the reference to the div element
+ const divElement = document.querySelector('.colorful-div');
+
+ // Function to change the background color
+ function changeBackgroundColor() {
+   const currentColor = divElement.style.backgroundColor;
+
+   if (currentColor === 'blue') {
+     divElement.style.backgroundColor = 'green';
+   } else if (currentColor === 'green') {
+     divElement.style.backgroundColor = '';
+   } else {
+     divElement.style.backgroundColor = 'blue';
+   }
+ }
+
+ // Set an interval to change the background color every second
+ setInterval(changeBackgroundColor, 1000);
