@@ -49,26 +49,26 @@
         <div class="whiteBackground">
 <!-- Klar til brug -->
         <h1 class="underOverskrift">Klar til brug</h1>
-        <div id="myBtn" class="rewardBox1 color1">
+        <button onclick="openModal()" class="rewardBox1 color1">
             <h3 class="rewardText activeText">Gratis Brillerens</h3>
             <i class="fa-solid fa-circle-check"></i>
-        </div>
-        <div class="rewardBox1 color2">
+        </button>
+        <button class="rewardBox1 color2">
             <h3 class="rewardText activeText">10% rabat på næste køb</h3>
             <i class="fa-solid fa-circle-check"></i>
-        </div>
-        <div class="rewardBox1 color3">
+        </button>
+        <button class="rewardBox1 color3">
             <h3 class="rewardText activeText">En kop gratis kaffe</h3>
             <i class="fa-solid fa-circle-check"></i>
-        </div>
-        <div class="rewardBox1 color1">
+        </button>
+        <button class="rewardBox1 color1">
             <h3 class="rewardText activeText">Køb 3 betal for 2</h3>
             <i class="fa-solid fa-circle-check"></i>
-        </div>
-        <div class="rewardBox1 color2">
+        </button>
+        <button class="rewardBox1 color2">
             <h3 class="rewardText activeText">Fri fragt af linser</h3>
             <i class="fa-solid fa-circle-check"></i>
-        </div>
+        </button>
 
 <!-- Tjen hurtige point -->
         <h1 class="underOverskrift">Du er der snart</h1>
@@ -102,7 +102,7 @@
 
 <!-- Tjen hurtige points -->
         <h1 class="underOverskrift">Tjen hurtige points</h1>
-        <div class="rewardBox1 color1">
+        <div class="rewardBox color1">
             <div class="rewardGrid">
                 <h3 class="rewardText activeText">Henvis en ven</h3>
                 <p class="rewardText">Tjen 500 points</p>
@@ -111,7 +111,7 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="rewardBox1 color2">
+        <div class="rewardBox color2">
             <div class="rewardGrid">
                 <h3 class="rewardText activeText">Følg os på Facebook</h3>
                 <p class="rewardText">Tjen 150 points</p>
@@ -120,7 +120,7 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="rewardBox1 color3">
+        <div class="rewardBox color3">
             <div class="rewardGrid">
                 <h3 class="rewardText activeText">Følg os på Instagram</h3>
                 <p class="rewardText">Tjen 150 points</p>
@@ -129,7 +129,7 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="rewardBox1 color1">
+        <div class="rewardBox color1">
             <div class="rewardGrid">
                 <h3 class="rewardText activeText">Tilmeld dig nyhedsbrevet</h3>
                 <p class="rewardText">Tjen 300 points</p>
@@ -141,10 +141,10 @@
 
 
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<!-- <div id="myModal" class="modal"> -->
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <!-- <div class="modal-content">
     <span class="close">&times;</span>
     <div class="modal-icons">
         <i class="fa-solid fa-spray-can-sparkles"></i>
@@ -154,13 +154,45 @@
     <p>Udløber 01-07-2023</p>
     <br>
     <p>En gratis spray brillerens, som kan afhentes i Brillebaren</p>
-    <div id="qrCodeContainer"></div>
     <button class="greenBtnModal">
         <p class="greenBtnTxt activeText">Aktiver Belønning</p>
     </button>
   </div>
 
+</div> -->
+
+
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <div class="card" id="card">
+          <div class="card-face card-front">
+              <div class="modal-icons">
+                  <i class="fa-solid fa-spray-can-sparkles"></i>
+                  <i class="fa-solid fa-glasses fa-rotate-by"></i>
+              </div>
+              <h2 class="modal-overskrift">Gratis brillerens</h2>
+              <p>Udløber 01-07-2023</p>
+              <br>
+              <p>En gratis spray brillerens, som kan afhentes i Brillebaren</p>
+              <button class="greenBtn" onclick="flipCard()">
+                  <p class="greenBtnTxt">Aktiver Belønning</p>
+              </button>
+          </div>
+          <div class="card-face card-back">
+              <img class="qrCode" src="img/qr-code.png" alt="qr-code">
+              <h2 class="modal-overskrift">Gratis brillerens</h2>
+              <p>Udløber 01-07-2023</p>
+              <br>
+              <p>En gratis spray brillerens, som kan afhentes i Brillebaren</p>
+              <button class="greenBtn">
+                  <p class="greenBtnTxt">Aktiveret</p>
+              </button>
+          </div>
+      </div>
+  </div>
 </div>
+
         <footer></footer>
     </div>
 
