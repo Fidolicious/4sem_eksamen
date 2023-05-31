@@ -14,8 +14,32 @@
 </head>
 <body>
     <!-- Navbar -->
-    <header class="loginHeader">
-        <div class="backPage" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+    <header>
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="menu">
+            <div class="menu-header">
+                <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
+            </div>
+            <div class="navContainer">
+                <ul class="navbar">
+                    <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
+                    <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
+                    <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+                    <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
+                </ul>
+            </div>
+
+            <div class="profileFlex">
+                <i class="profile1 fa-regular fa-user"></i>
+                <div class="profile2">
+                    <a class="profileName" href="#">Malene Mortensen</a>
+                    <p class="profileTxt">Bronze</p>
+                    <p class="profileTxt">235 Points</p>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <div class="background">
@@ -30,7 +54,7 @@
             <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
             <br>
             <label class="inputLabel">Fornavn</label>
-            <input type="password" class="form-control" name="password" placeholder="Skriv dit fornavn" required="">
+            <input type="text" class="form-control" name="firstname" placeholder="Skriv dit fornavn" required="">
             <br>
             <label class="inputLabel">Efternavn</label>
             <input type="text" class="form-control" name="username" placeholder="Skriv dit efternavn" required="">
