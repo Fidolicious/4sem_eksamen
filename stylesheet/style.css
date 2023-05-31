@@ -74,6 +74,8 @@ li {
   /* Andre farver */
   --white: #FFF;
   --lineGrey: #EEEEEE;
+  --cardYellow: #99813B;
+  --black: #000;
 }
 
 /* Styleguide */
@@ -614,6 +616,11 @@ hr {
   justify-content: space-evenly;
 }
 
+.fa-xmark {
+  font-size: 20px;
+  color: var(--white);
+}
+
 .fa-spray-can-sparkles {
   font-size: 70px;
   margin-top: 40px;
@@ -933,4 +940,101 @@ input .checkboxSquare {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Medlemskort */
+
+.underOverskrift2 {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 900;
+  color: var(--deepBlue);
+  margin-bottom: 20px;
+}
+
+.medlemskort {
+  background-color: var(--cardYellow);
+  text-align: center;
+  margin: 20px 0px;
+  border-radius: 20px;
+  border: none;
+  padding: 20px 0px;
+}
+
+.barCode {
+  width: 250px;
+}
+
+.barcodeBackground {
+  background-color: var(--white);
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.medlemsNavn, .medlemsTal {
+  color: var(--white);
+}
+
+.medlemsNavn {
+  margin: 10px;
+}
+
+.blackSquare {
+  background-color: var(--black);
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.marginClass {
+  margin: 20px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Planer */
+.planPrice {
+  color: var(--deepYellow);
+}
+
+.planTxt {
+  text-align: start !important;
+}
+
+.selectedPlan {
+  border: 1px;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 20px 0px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
