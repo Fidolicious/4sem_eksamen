@@ -587,8 +587,9 @@ footer {
   width: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  text-align: center;
+  justify-content:center;
 }
 
 .colorCircle {
@@ -601,6 +602,7 @@ footer {
 .greenArrow {
   color: var(--deepGreen);
   font-size: 20px;
+  margin-left: 15px;
 }
 
 hr {
