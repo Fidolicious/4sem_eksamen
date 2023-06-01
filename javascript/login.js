@@ -19,3 +19,4 @@ function login() {
   usernameInput.value = "";
   passwordInput.value = "";
 }
+

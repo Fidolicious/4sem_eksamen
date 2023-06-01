@@ -8,9 +8,7 @@ h1 {
   font-size: 34px;
   font-weight: 900;
   text-align: center;
-  display: inline-block;
   color: var(--white);
-  padding: 0 20px 0 20px;
 }
 
 .underOverskrift {
@@ -371,6 +369,7 @@ h4 {
   font-weight: 600;
   background-color: var(--midGreen);
   border-radius: 15px;
+  border: none;
 }
 
 .profileName {
@@ -577,6 +576,10 @@ footer {
   text-decoration: none;
 }
 
+.overblikTxt {
+  text-align: left;
+}
+
 .greenBtn {
   background-color: var(--lightGreen);
   padding: 20px;
@@ -587,6 +590,7 @@ footer {
   width: 100%;
   margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
   justify-content:center;
@@ -602,7 +606,7 @@ footer {
 .greenArrow {
   color: var(--deepGreen);
   font-size: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 hr {
@@ -888,7 +892,8 @@ hr {
 .dateForm {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .year, .month, .day {
@@ -901,6 +906,12 @@ hr {
 form span {
   display: block;
 }
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
 input .checkboxSquare {
   height: 20px;
   width: 20px;
@@ -914,11 +925,18 @@ input .checkboxSquare {
   margin-left: 10px;
 }
 
+.checkboxSquare2 {
+  height: 20px;
+  width: 45px;
+  border: 5px;
+  margin-left: 10px;
+}
+
 .interest {
   display: flex;
   box-shadow: 0 0 11px rgba(33, 33, 33, .2);
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: space-around;
 }
 
@@ -1010,6 +1028,9 @@ input .checkboxSquare {
   text-align: center;
 }
 
+.marginClassLeft {
+  margin: 20px;
+}
 
 
 
@@ -1026,6 +1047,7 @@ input .checkboxSquare {
 
 .planTxt {
   text-align: start !important;
+  margin-bottom: 15px;
 }
 
 .selectedPlan {
@@ -1039,4 +1061,99 @@ input .checkboxSquare {
   align-items: center;
   padding-right: 20px;
   padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: var(--white);
+  color: var(--deepBlue);
+  padding: 18px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  border: 1px solid black; /* Add border style here */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: var(--white);
+  margin-bottom: 0;
+  border-radius: 20px 20px 0 0;
+  border: 2px solid var(--deepYellow);
+  border-bottom: none;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 20px;
+  padding-top: 0;
+  display: none;
+  overflow: hidden;
+  background-color: var(--white);
+  border-radius: 0 0 20px 20px;
+  border: 2px solid var(--deepYellow);
+  border-top: none;
+  text-align: left;
+  line-height: 20px;
+}
+
+.collapsible.active .planTxt {
+  color: var(--deepYellow);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.readmore {
+  display: block;
+}
+
+.collapsible.active .readmore {
+  display: none;
+}
+
+.shortTxt {
+  display: block;
+}
+.collapsible.active .shortTxt {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper .show-password-button {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+
+.password-wrapper input[type="password"] {
+  padding-right: 40px; /* Adjust the padding to make space for the button */
 }

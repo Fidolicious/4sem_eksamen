@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/navbar_javascript.js"></script>
+    <script src="javascript/btn_paths.js"></script>
     <script src="javascript/date.js"></script>
+    <script src="javascript/backbtn.js"></script>
     <link rel="stylesheet" href="stylesheet/style.css">
     <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,33 +14,8 @@
     <title>Opret konto</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <header>
-        <div class="burger-icon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <nav class="menu">
-            <div class="menu-header">
-                <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
-            </div>
-            <div class="navContainer">
-                <ul class="navbar">
-                    <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
-                    <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
-                    <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
-                    <li><i class="fa fa-regular fa-circle-question"></i><a href="#">Hjælp</a></li>
-                </ul>
-            </div>
-
-            <div class="profileFlex">
-                <i class="profile1 fa-regular fa-user"></i>
-                <div class="profile2">
-                    <a class="profileName" href="#">Malene Mortensen</a>
-                    <p class="profileTxt">Bronze</p>
-                    <p class="profileTxt">235 Points</p>
-                </div>
-            </div>
-        </nav>
+    <header class="loginHeader">
+        <div class="backPage" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
     </header>
 
     <div class="background">
@@ -52,6 +28,7 @@
         <form class="loginForm">
             <label class="inputLabel">E-mail</label>
             <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+            <p>Her sender vi dine fortrukne nyheder og fakturaer.</p>
             <br>
             <label class="inputLabel">Fornavn</label>
             <input type="text" class="form-control" name="firstname" placeholder="Skriv dit fornavn" required="">
@@ -79,7 +56,9 @@
                         <select class="year" name="year" id="year"></select>
                     </span>
                 </div>
-
+                <p id="error" class="error-message"></p>
+                <br>
+            <p>Mest interesseret i (Friviligt):</p>
             <div class="interest">
                 <label class="interestbox">
                     <span class="checkTxt">Briller</span>
@@ -96,6 +75,11 @@
             </div>
             <br><br>
             <div class="intMails">
+                <label class="sendMails">
+                    <span class="checkTxt">Send mig mails</span>
+                    <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+                </label>
+                <p>Fortæl os hvad du vil høre om:</p>
                 <label class="sendMails">
                     <span class="checkTxt">Rabatter og tilbud</span>
                     <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
@@ -117,7 +101,7 @@
 
             <label class="vilkr">
                 <p>Ved at lave en konto acceptere du vores <a class="greenLink" href="#">Vilkår & betingelser</a> og <a class="greenLink" href="#">Privathedspolitik</a></p>
-                <input type="checkbox" value="terms" class="checkboxSquare" name="terms">
+                <input type="checkbox" value="terms" class="checkboxSquare2" name="terms">
             </label>
 
             <span class="loginCenterTxt txtLine"> Eller anvend </span>
@@ -131,7 +115,7 @@
                 </a>
             </div>
 
-            <button class="btn greenLoginBtn greenBtn" type="submit">
+            <button id="changePlan" class="btn greenLoginBtn greenBtn" type="submit">
                 <p class="activeTextGreen greenBtnTxt">Opret Konto</p>
                 <i class="fa-solid fa-arrow-right greenArrow"></i>
             </button>

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript/navbar_javascript.js"></script>
+    <script src="javascript/expand_btn.js"></script>
+    <script src="javascript/btn_paths.js"></script>
     <link rel="stylesheet" href="stylesheet/style.css">
     <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,30 +51,52 @@
 
     <div class="whiteBackground">
         <div class="marginClass">
-            <div class="selectedPlan">
+            <div class="collapsible">
                 <div class="planDiv">
                     <h2 class="planTxt">Bronze</h2>
-                    <p>optjen Point</p>   
+                    <p class="shortTxt">Optjen point</p>
+                    <p class="greenLink readmore">Læs mere</p>
                 </div>
                 <h2 class="planPrice">Gratis</h2>
             </div>
-            <div class="selectedPlan">
+            <div class="content">
+                <p>Optjen points og indløs disse til dine ønsket rabatter og belønninger. </p>
+            </div>
+
+            <div class="collapsible">
                 <div class="planDiv">
                     <h2 class="planTxt">Sølv</h2>
-                    <p>optjen Point</p>
+                    <p class="shortTxt">Eksklusive events</p>
+                    <p class="greenLink readmore">Læs mere</p>
                 </div>
                 <h2 class="planPrice">25,- / md.</h2>
             </div>
-            <div class="selectedPlan">
+            <div class="content">
+                <p>Optjen points og indløs disse til 
+                    dine ønsket rabatter og belønninger. Udover 
+                    point og rabatter, vil du også blive inviteret til 
+                    specielle events.
+                </p>
+            </div>
+
+            <div class="collapsible">
                 <div class="planDiv">
                     <h2 class="planTxt">Guld</h2>
-                    <p>optjen Point</p>
+                    <p class="shortTxt">Goodiebag månedligt</p>
+                    <p class="greenLink readmore">Læs mere</p>
                 </div>
                 <h2 class="planPrice">50,- / md.</h2>
             </div>
+            <div class="content">
+                <p>Optjen points 3 gange hurtigere med Guldkortet. 
+                    Optjen points og indløs disse til dine ønsket rabatter og belønninger. Udover point og rabatter, 
+                    vil du også blive inviteret til eksklusive events. 
+                </p>
+            </div>
+            
 
-            <button class="greenBtn btn">
-                <p class="greenBtnTxt activeText">Opgrader plan</p>
+            <button class="greenBtn btn" id="plan">
+                <p class="greenBtnTxt activeText">Godkend plan</p>
                 <i class="fa-solid fa-arrow-right greenArrow"></i>
             </button>
         </div>

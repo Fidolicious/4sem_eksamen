@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript/navbar_javascript.js"></script>
+    <script src="javascript/btn_paths.js"></script>
     <link rel="stylesheet" href="stylesheet/style.css">
     <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,13 +48,14 @@
     </div>
 
     <div class="whiteBackground">
-        <ul class="overblik">
+            <div class="marginClassLeft">
+                <ul class="overblik"></ul>
             <li>
                 <a class="overblikList" href="medlemskort.html">
                     <div class="colorCircle color1"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Mit Medlemskort</h2>
-                        <p>Se dit kort her</p>
+                        <p class="overblikTxt">Se dit kort her</p>
                     </div>
                 </a>
             </li>
@@ -63,7 +65,7 @@
                     <div class="colorCircle color2"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Min konto</h2>
-                        <p>Navn, adresse mm.</p>
+                        <p class="overblikTxt">Navn, adresse mm.</p>
                     </div>
                 </a>
             </li>
@@ -73,7 +75,7 @@
                     <div class="colorCircle color3"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Mine belønninger</h2>
-                        <p>10 rabatter venter</p>
+                        <p class="overblikTxt">10 rabatter venter</p>
                     </div>
                 </a>
             </li>
@@ -83,7 +85,7 @@
                     <div class="colorCircle color1"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Mine fakturer</h2>
-                        <p>3 fakturer</p>
+                        <p class="overblikTxt">3 fakturer</p>
                     </div>
                 </a>
             </li>
@@ -93,7 +95,7 @@
                     <div class="colorCircle color2"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Mine produkter</h2>
-                        <p>4 produkter</p>
+                        <p class="overblikTxt">4 produkter</p>
                     </div>
                 </a>
             </li>
@@ -103,15 +105,23 @@
                     <div class="colorCircle color3"></div>
                     <div class="listTxt">
                         <h2 class="overblikTitel">Synsprøve resultater</h2>
-                        <p>2 resultater</p>
+                        <p class="overblikTxt">2 resultater</p>
                     </div>
                 </a>
             </li>
         </ul>
-        <button class="greenBtn btn">
+        <button class="greenBtn btn" id="changePlan">
             <p class="greenBtnTxt activeText">Skift plan</p>
             <i class="fa-solid fa-arrow-right greenArrow"></i>
-        </button>
+        </button> 
+
+        <br><br>
+        
+        <a class="greenLink" href="landingpage.html" >Log af</a>
+            </div>
+
+            
+            
         <!-- Footer -->
         <footer></footer>
     </div>
