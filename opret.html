@@ -42,21 +42,24 @@
             <label class="inputLabel">Gentag adgangkode</label>
             <input type="password" class="form-control" name="password" placeholder="Gentag adgangskode" required="">
 
-                <div class="dateForm">
-                    <span>
-                        <label for="day">Dag</label>
-                        <select class="day" name="day" id="day"></select>
-                    </span>
-                    <span >
-                        <label for="month">Måned</label>
-                        <select class="month" name="month" id="month"></select>
-                    </span>
-                    <span>
-                        <label for="year">År</label>
-                        <select class="year" name="year" id="year"></select>
-                    </span>
-                </div>
-                <p id="error" class="error-message"></p>
+            <div class="dateForm">
+                <span>
+                  <label for="day">Dag</label>
+                  <select class="day" name="day" id="day" required=""></select>
+                </span>
+                <span>
+                  <label for="month">Måned</label>
+                  <select class="month" name="month" id="month" required=""></select>
+                </span>
+                <span>
+                  <label for="year">År</label>
+                  <select class="year" name="year" id="year" required=""></select>
+                </span>
+              </div>
+              <span id="errorMessage" class="error"></span>
+              
+                                      
+                
                 <br>
             <p>Mest interesseret i (Friviligt):</p>
             <div class="interest">

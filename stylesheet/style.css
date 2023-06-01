@@ -907,9 +907,11 @@ form span {
   display: block;
 }
 
-.error-message {
+.error {
   color: red;
-  margin-top: 5px;
+  font-size: 12px;
+  text-decoration: none;
+  font-style: italic;
 }
 
 input .checkboxSquare {
