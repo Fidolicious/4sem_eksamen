@@ -42,9 +42,11 @@ span {
   color: var(--deepBlue);
 }
 
-/* a {
-  text-decoration: none;
-} */
+input:focus {
+  outline: 2px solid var(--deepYellow);
+  border: none;  
+ }
+
 .greenLink {
   color: var(--deepGreen);
   text-decoration: underline;
@@ -53,6 +55,26 @@ span {
 li {
   list-style: none;
   text-decoration: none;
+}
+
+input[type='checkbox']:checked {
+  background-color: var(--deepGreen);
+}
+input[type='checkbox']:checked:after {
+  content: '\2713';
+  color:white;
+}
+input[type='checkbox']{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px !important;
+  height: 20px !important;
+  appearance:none;
+  border-radius:10%;
+  border: 1px solid var(--midGreen);
+  box-shadow: none;
+  font-weight: 900;
 }
 
 
@@ -849,6 +871,7 @@ hr {
   padding: 10px;
   border-radius: 10px;
   border-width: 0.5px;
+  
 }
 
 .loginCenterTxt {
@@ -920,16 +943,11 @@ input .checkboxSquare {
   border: 5px;
   margin-left: 10px;
 }
+
+
 .checkboxSquare{
   height: 20px;
   width: 20px;
-  border: 5px;
-  margin-left: 10px;
-}
-
-.checkboxSquare2 {
-  height: 20px;
-  width: 45px;
   border: 5px;
   margin-left: 10px;
 }
@@ -960,8 +978,9 @@ input .checkboxSquare {
 
 .vilkr {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 
@@ -1134,28 +1153,4 @@ input .checkboxSquare {
 }
 .collapsible.active .shortTxt {
   display: none;
-}
-
-
-
-
-
-
-
-
-
-
-.password-wrapper {
-  position: relative;
-}
-
-.password-wrapper .show-password-button {
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  transform: translateY(-50%);
-}
-
-.password-wrapper input[type="password"] {
-  padding-right: 40px; /* Adjust the padding to make space for the button */
 }
