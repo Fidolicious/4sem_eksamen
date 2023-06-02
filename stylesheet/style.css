@@ -42,9 +42,11 @@ span {
   color: var(--deepBlue);
 }
 
-/* a {
-  text-decoration: none;
-} */
+input:focus {
+  outline: 2px solid var(--deepYellow);
+  border: none;
+ }
+
 .greenLink {
   color: var(--deepGreen);
   text-decoration: underline;
@@ -53,6 +55,26 @@ span {
 li {
   list-style: none;
   text-decoration: none;
+}
+
+input[type='checkbox']:checked {
+  background-color: var(--deepGreen);
+}
+input[type='checkbox']:checked:after {
+  content: '\2713';
+  color:white;
+}
+input[type='checkbox']{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px !important;
+  height: 20px !important;
+  appearance:none;
+  border-radius:10%;
+  border: 1px solid var(--midGreen);
+  box-shadow: none;
+  font-weight: 900;
 }
 
 
@@ -832,6 +854,7 @@ hr {
   padding: 10px;
   border-radius: 10px;
   border-width: 0.5px;
+
 }
 
 .loginCenterTxt {
@@ -903,6 +926,8 @@ input .checkboxSquare {
   border: 5px;
   margin-left: 10px;
 }
+
+
 .checkboxSquare{
   height: 20px;
   width: 20px;
@@ -917,9 +942,7 @@ input .checkboxSquare {
   margin-left: 10px;
   margin-right: 5px;
 }
-.shorterInput{
 
-}
 .interest {
   display: flex;
   box-shadow: 0 0 11px rgba(33, 33, 33, .2);
@@ -946,8 +969,9 @@ input .checkboxSquare {
 
 .vilkr {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 /* Medlemskort */
@@ -1098,15 +1122,6 @@ input .checkboxSquare {
 .collapsible.active .shortTxt {
   display: none;
 }
-
-
-
-
-
-
-
-
-
 
 .password-wrapper {
   position: relative;
