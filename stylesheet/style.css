@@ -211,6 +211,7 @@ h4 {
   color: var(--deepBlue);
 }
 
+
 .btn {
   display: flex;
   background-color: var(--deepYellow);
@@ -316,6 +317,7 @@ h4 {
 .menu.show {
   top: 0;
   position: fixed;
+  overflow: hidden;
 }
 
 .menu-header {
@@ -442,11 +444,6 @@ h4 {
   background-color: var(--lightYellow);
 }
 
-.fa-circle-play {
-  font-size: 30px;
-  color: var(--midGreen);
-}
-
 .activeText {
   font-weight: 700;
 }
@@ -547,16 +544,23 @@ h4 {
   margin: auto;
   text-align: center;
 }
-/* Belønninger */
+
+
+
+/*-------------------- Belønninger -------------------------*/
 .rewardHeader {
   margin-top: 60px;
   display: block;
 }
 
 .fa-circle-check {
-  font-size: 30px;
+  font-size: 34px;
   color: var(--midGreen);
   margin-right: 10px;
+}
+
+.almost {
+  width: 34px;
 }
 
 .rewardBox1 {
@@ -581,7 +585,6 @@ h4 {
   height: 30px;
   border-color: var(--deepGreen);
   border-style: dashed;
-  margin-right: 10px;
 }
 
 /* FOOTER */
@@ -641,6 +644,9 @@ hr {
 .overblikTitel {
   text-align: left;
 }
+
+
+
 
 .modal-icons {
   display: flex;
@@ -815,6 +821,13 @@ hr {
   color: var(--white);
 }
 
+.rewardP1 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+
+
 /* Login */
 .loginLogo {
   width: 220px;
@@ -907,12 +920,25 @@ hr {
   margin-top: 20px;
 }
 
-.year, .month, .day {
+.month{
+  padding: 10px;
+  width: 90%;
+  border-color: var(--lineGrey);
+  border-radius: 10px;
+}
+
+.year{
   padding: 10px;
   width: 100%;
   border-color: var(--lineGrey);
   border-radius: 10px;
   -webkit-appearance: none;
+}
+.day {
+  padding: 10px;
+  width: 90%;
+  border-color: var(--lineGrey);
+  border-radius: 10px;
 }
 
 form span {
@@ -996,6 +1022,7 @@ form span {
 
 .barCode {
   width: 250px;
+  height: 10vh;
 }
 
 .barcodeBackground {
