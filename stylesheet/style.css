@@ -72,7 +72,7 @@ input[type='checkbox']{
   height: 20px !important;
   appearance:none;
   border-radius:10%;
-  border: 1px solid var(--midGreen);
+  border: 1px solid #d8d8d8;
   box-shadow: none;
   font-weight: 900;
 }
@@ -256,7 +256,10 @@ h4 {
 .loginArrow {
   color: var(--white);
 }
-
+.fa-arrow-right:before {
+    content: "\f061";
+    font-size: 20px;
+}
 .landingText {
   color: var(--deepBlue);
   text-align: center;
@@ -662,7 +665,7 @@ hr {
 }
 
 .modal-overskrift {
-  text-align: start;
+  text-align: center;
   margin-top: 20px;
 }
 
@@ -749,6 +752,7 @@ hr {
   border-radius: 20px;
   padding: 20px;
   width: 90%;
+  text-align: center;
 }
 
 .card-back {
@@ -763,6 +767,7 @@ hr {
   padding: 20px;
   transform: rotateY(180deg);
   width: 90%;
+  text-align: center;
 }
 
 .greenBtn2 {
@@ -853,7 +858,7 @@ hr {
   font-size: 16px;
   padding: 10px;
   border-radius: 10px;
-  border-width: 0.5px;
+  border: 1px solid var(--lineGrey);
 
 }
 
@@ -907,6 +912,7 @@ hr {
   width: 100%;
   border-color: var(--lineGrey);
   border-radius: 10px;
+  -webkit-appearance: none;
 }
 
 form span {
@@ -920,14 +926,6 @@ form span {
   font-style: italic;
 }
 
-input .checkboxSquare {
-  height: 20px;
-  width: 20px;
-  border: 5px;
-  margin-left: 10px;
-}
-
-
 .checkboxSquare{
   height: 20px;
   width: 20px;
@@ -940,15 +938,16 @@ input .checkboxSquare {
   width: 45px;
   border: 5px;
   margin-left: 10px;
-  margin-right: 5px;
 }
 
 .interest {
   display: flex;
-  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
-  padding: 10px;
+  padding: 15px;
   margin-top: 10px;
   justify-content: space-around;
+  border-radius: 10px;
+  border: 1px solid var(--lineGrey);
+
 }
 
 .interestbox {
@@ -963,8 +962,9 @@ input .checkboxSquare {
 }
 
 .intMails {
-  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+  border: 1px solid var(--lineGrey);
   padding: 10px;
+  border-radius: 10px;
 }
 
 .vilkr {
