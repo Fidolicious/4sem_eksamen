@@ -1,26 +1,26 @@
-// Function to open the modal
+// Funktion til at åbne modal
 function openModal() {
   const modal = document.getElementById("myModal");
   modal.style.display = "block";
 }
 
-// Function to close the modal
+// Funktion til at lukke modal 
 function closeModal() {
   const modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
 
-// Function to flip the card
+// Funktion til at flippe kortet/modalen
 function flipCard() {
   const card = document.getElementById("card");
   card.classList.toggle("card-flipped");
 }
 
-// Close the modal when the user clicks outside of it
-window.onclick = function(event) {
-  const modal = document.getElementById("myModal");
-  if (event.target === modal) {
-    modal.style.display = "none";
-  }
-};
+// Luk modal når brugeren klikker udenfor den
+// window.onclick = function(event) {
+//   const modal = document.getElementById("myModal");
+//   if (event.target === modal) {
+//     modal.style.display = "none";
+//   }
+// };
 

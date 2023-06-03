@@ -1,4 +1,4 @@
- // Back button
+ // Tilbage knap
  function goBack() {
     window.history.back();
   }

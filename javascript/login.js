@@ -9,7 +9,7 @@ function login() {
   if (username === "malene@gmail.com" && password === "Malene2109") {
     console.log("Log ind gennemført!");
     // Omdiriger til forsiden
-    window.location.href = "index.html";
+    window.location.href = "landingpage.html";
   } else {
     console.log("Log ind fejlet. Forkert E-mail eller adgangskode.");
     // Vis fejlbesked eller udfør anden håndtering af fejlet login

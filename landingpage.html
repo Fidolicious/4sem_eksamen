@@ -4,34 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="javascript/navbar_javascript.js"></script>
+    <script src="javascript/modal.js"></script>
     <script src="javascript/btn_paths.js"></script>
+    <link rel="stylesheet" href="stylesheet/style.css">
     <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Brillebaren Plus</title>
+    <title>Brillebaren Plus Forside</title>
 </head>
 <body>
-    <div class="background" id="landingBack">
-        <img class="logo" src="img/logo.png" alt="logo">
-        <img class="maskot" src="img/Maskot til Brillebaren 1.png" alt="maskot">
+  <header class="navHeader">
+    <div class="burger-icon">
+        <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="whiteBackground">
+    <nav class="menu">
+      <div class="menu-header">
+        <div class="back-btn"><i class="fa-solid fa-arrow-left"></i></div>
+      </div>
+      <div class="navContainer">
+        <ul class="navbar">
+            <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
+            <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
+            <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+            <li><i class="fa fa-regular fa-circle-question"></i><a href="faq.html">Hjælp</a></li>
+        </ul>
+      </div>
+      
+      <div class="profileFlex">
+        <i class="profile1 fa-regular fa-user"></i>
+        <div class="profile2">
+           <a class="profileName" href="#">Malene Mortensen</a>
+            <p class="profileTxt">Bronze</p>
+            <p class="profileTxt">235 Points</p>
+        </div>
+      </div>
+    </nav>
+</header>
+
+  <div class="background">
+    <h1>Velkommen, Malene</h1>
+  </div>
+
+  <div class="whiteBackground">
     <div class="landingBox">
-        <h4 class="boxText">Har du allerede en konto?</h4>
-        <button id="login" class="btn loginBtn">
-            <p class="btnText">Login</p>
-            <i class="fa-solid fa-arrow-right loginArrow"></i>
-        </button>
+      <h2 class="boxText">Se dit medlemskort</h2>
+      <button class="btn btnIndex" id="medlemskort">
+          <p class="btnText">Medlemskort</p>
+          <i class="fa-solid fa-arrow-right loginArrow"></i>
+      </button>
     </div>
     <div class="landingBox">
-        <h4 class="boxText">Tilmeld dig BrilleBaren Plus</h4>
-        <button id="opret" class="btn loginBtn">
-            <p class="btnText">Opret konto</p>
-            <i class="fa-solid fa-arrow-right loginArrow"></i>
-        </button>
+      <h2 class="boxText">Se dine belønninger</h2>
+      <btn class="btn btnIndex" id="rewards">
+          <p class="btnText">Belønninger</p>
+          <i class="fa-solid fa-arrow-right loginArrow"></i>
+      </btn>
     </div>
-    <p class="landingText">Som medlem af Brillebaren Plus får du eksklusive fordele i Brillebaren i Rosengårdcenteret (Odense)</p>
+  <h2 class="underOverskrift">Månedens udvalgte<br>belønninger:</h2>
+  <button onclick="openModal()" class="rewardBox1 colorful-div color1">
+    <div class="rewardP1">
+      <h3 class="rewardText1 activeText">Gratis Brillerens</h3>
+      <h3 class="boxText1 activeTextGreen">Klar til brug</h3>
+    </div>
+    
+    <i class="fa-solid fa-circle-check"></i>
+</button>
+  <div class="rewardBox color2">
+    <div class="rewardGrid">
+      <h3 class="boxText1">10% rabat på næste køb</h3>
+      <p class="boxText1">Mangler 200 point</p>
+    </div>
+    <div class="rewardGrid2">
+      <p class="procenter">50%</p>
+      <img class="almost" src="img/load.png" alt="almost icon">
+    </div>
+  </div>
+  <div class="rewardBox color3">
+    <div class="rewardGrid">
+      <h3 class="boxText1">Gratis kop kaffe</h3>
+      <p class="boxText1">Mangler 200 point</p>
+    </div>
+    <div class="rewardGrid2">
+      <p class="procenter">50%</p>
+      <img class="almost" src="img/load.png" alt="almost icon">
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="card" id="card">
+            <div class="card-face card-front">
+              <button class="close-btn" onclick="closeModal()">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+                <div class="modal-icons">
+                    <i class="fa-solid fa-spray-can-sparkles"></i>
+                    <i class="fa-solid fa-glasses fa-rotate-by"></i>
+                </div>
+                <h2 class="modal-overskrift">Gratis brillerens</h2>
+                <p class="modalTxt">Udløber 01-07-2023</p>
+                <br>
+                <p class="modalTxt">En gratis spray brillerens, <br> som kan afhentes i Brillebaren</p>
+                <button class="greenBtn2" id="startAnimationButton" onclick="flipCard()">
+                    <p class="greenBtnTxt">Aktiver Belønning</p>
+                </button>
+            </div>
+            <div class="card-face card-back">
+              <button class="close-btn" onclick="closeModal()">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+                <img class="qrCode" src="img/qr-code.png" alt="qr-code">
+                <h2 class="modal-overskrift">Gratis brillerens</h2>
+                <p class="modalTxt">Udløber 01-07-2023</p>
+                <br>
+                <p class="modalTxt">En gratis spray brillerens, <br> som kan afhentes i Brillebaren</p>
+                    
+                <div class="rewardActivatet">
+                  <h2 class="activatetTxt">Aktiveret</h2>
+                  <i class="fChekmark fa-solid fa-check"></i>
+                </div>
+  
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer></footer>
 </div>
 
 </body>
