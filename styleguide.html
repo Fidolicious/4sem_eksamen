@@ -1,123 +1,1524 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="javascript/navbar_javascript.js"></script>
-    <script src="javascript/styleguide.js"></script>
-    <link rel="stylesheet" href="stylesheet/style.css">
-    <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <title>Styleguide - Brillebaren+</title>
-  </head>
-  <body style="margin: 5%">
-    <h1 style="color: black">Styleguide Brillebaren+</h1><br><br>
-    <p>Dette er en styleguiden som skal følges for Brillebaren+.
-      Dette styleguide har til formål at hjælpe både designere,
-      men også udviklere med vedligeholdelse af kundeklubbens interface.
-      Du kan finde de elementer som må anvendes på webapplikationen her.</p>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="javascript/navbar_javascript.js"></script>
+  <script src="javascript/styleguide.js"></script>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <script src="https://kit.fontawesome.com/51dbfd6491.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>Styleguide - Brillebaren+</title>
+</head>
+
+<body style="margin: 5%">
+  <h1 style="color: black">Styleguide Brillebaren+</h1><br><br>
+  <p>Dette er en styleguiden som skal følges for Brillebaren+.
+    Dette styleguide har til formål at hjælpe både designere,
+    men også udviklere med vedligeholdelse af kundeklubbens interface.
+    Du kan finde de elementer som må anvendes på webapplikationen her.</p>
+  <br><br>
+  <h2>Find det element du skal bruge</h2>
+  <div class="styleguideDiv">
+    <button class="btnStyleguideMenu" href="#typografi_klik">Typografi</button>
+    <button class="btnStyleguideMenu" href="#logo_klik">Logo</button>
+    <button class="btnStyleguideMenu" href="#medlemskort_klik">Medlemskort</button>
+    <button class="btnStyleguideMenu" href="#ikoner_klik">Ikoner</button>
+    <button class="btnStyleguideMenu" href="#kasser_klik">Kasser / box</button>
+    <button class="btnStyleguideMenu" href="#formularer_klik">Formularer</button>
+    <button class="btnStyleguideMenu" href="#faq_klik">FAQ</button>
+  </div>
+
+  <!-- -------------------------------TYPOGRAFI------------------------------- -->
+  <section id="typografi_klik">
+    <h1 class="styleguide_overskrift">TYPOGRAFI</h1>
+    <p>Dette er de pågældende typografier, som er anvendt på webapplikationen.
+      webapplikationen bruger samme font som hjemmesiden, som er Montserrat.
+      Det er en geometrisk sans-serif skrifttype, som er en yderst moderne skrifttype.</p><br>
+
+    <!-- --------------------------OVERSKRIFT 1-------------------------------- -->
+    <h1 style="margin-top:0;" class="underOverskrift">Overskrift 1</h1>
+    <p>Dette er den primære overskrift til den første overskrift på siden.
+      Denne overskrift vil primært altid være hvid, når den indsættes, da den oftes fremstår på en grøn baggrund.
+      Er dette ikke tilfældet kan der bruges en class som hedder: underOverskrift.</p><br>
+
+    <h4>HTML</h4>
+    <textarea id="example" class="styleguide_textarea">
+         <h1>Skriv overskrift her</h1>
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example1" class="styleguide_textarea">
+          h1{
+            font-size: 34px;
+            font-weight: 900;
+            text-align: center;
+            display: inline-block;
+            color: var(--white);
+            padding: 0 20px 0 20px;
+          }
+
+          .underOverskrift {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            font-weight: 900;
+            color: var(--deepBlue);
+          }
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample1()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+    <!-- --------------------------OVERSKRIFT 2-------------------------------- -->
+    <h2>Overskrift 2</h2>
+    <p>Dette er den sekundære overskrift til overskrifter på siderne.
+      Denne overskrift bruges som inddeling af sektioner på siderne, når der skal være
+      være en overskrift på en sektion, som ikke skal være meget iøjenfaldende.</p><br>
+    <h4>HTML</h4>
+    <textarea id="example2" class="styleguide_textarea">
+       <h1>Skriv overskrift her</h1>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample2()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+    <!-- --------------------------OVERSKRIFT 3-------------------------------- -->
+    <h3>Overskrift 3</h3>
+    <p>Dette er den tredje overskrift til siderne.
+      Denne overskrift bruges som bruges for at skabe en tydeligegørelse.</p><br>
+    <h4>HTML</h4>
+    <textarea id="example3" class="styleguide_textarea">
+       <h3>Skriv overskrift her</h3>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample3()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example4" class="styleguide_textarea">
+      h3 {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--deepBlue);
+      }
+  </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample4()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+    <!-- --------------------------PARAGRAF-------------------------------- -->
+    <p>Paragraf</p><br>
+    <p>Dette er basis teksten til siderne. Dette bruges på alle sider, når der skal skrives informationer eller normal tekst.
+      Du skal blot bruge et paragraf tag i koden.</p><br>
+    <h4>HTML</h4>
+    <textarea id="example5" class="styleguide_textarea">
+       <p>Skriv tekst her</p>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample5()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example6" class="styleguide_textarea">
+      p {
+        font-size: 14px;
+        font-weight: 300;
+        color: var(--deepBlue);
+      }
+  </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample6()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+    <!-- --------------------------ATTRIBUTTER-------------------------------- -->
+    <a>Attributter</a>
+    <p>Når du skal anvende et klikbart link, så skal du bruge en attribut. Dette lader dig tilføje et link.
+      Husk at give det en class der hedder greenLink.</p><br>
+    <h4>HTML</h4>
+    <textarea id="example7" class="styleguide_textarea">
+       <a class="greenLink">Skriv tekst her</a>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample7()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example8" class="styleguide_textarea">
+      .greenLink {
+        color: var(--deepGreen);
+        text-decoration: underline;
+        font-weight: 400;
+      }
+  </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample8()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+
+  </section>
+  <!-- -------------------------------LOGO------------------------------- -->
+  <section id="logo_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">LOGO</h1>
+
+    <p>Der er kun et logo, som kan anvendes i Brillebaren+. Dette nedenstående logo bruges på index, log ind og tilmeld siderne,
+      og ingen andre steder. Det må anvendes til sociale medier og marketing, men det skal ikke optræde andre steder på webapplikationen.
+      Loget har en styling, som følger en class kaldet logo.</p>
+
+    <img class="logo" src="img/logo.png" alt=""><br>
+    <h4>CSS</h4>
+    <textarea id="example9" class="styleguide_textarea">
+        .logo {
+          width: 270px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          padding-top: 30px;
+          z-index: 1;
+        }
+      </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample9()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+
+
+    <h1 style="margin-top:0;" class="underOverskrift">Maskot</h1>
+
+    <p>Dette er maskotten til Brillebaren. Den bruges primært på login siden og index. Husk at tilføje CSS, da den eller bliver meget stor.</p>
+
+    <img class="maskot" src="img/Maskot til Brillebaren 1.png" alt="maskot">
+    <h4>CSS</h4>
+    <textarea id="example10" class="styleguide_textarea">
+          .maskot {
+            width: 150px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10px;
+            position: relative;
+            z-index: 5;
+          }
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample10()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+  </section>
+  <!-- -------------------------------MEDLEMSKORT------------------------------- -->
+  <section id="medlemskort_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">MEDLEMSKORT</h1>
+
+    <p>Dette er medlemkortet, som optræder på sin egen side. Plan er at der skal tilføjes JS på sigt, men på nuværende stadie er dette ikke relevant.</p>
+
+    <div class="medlemskort">
+      <h2 class="medlemsNavn">Kundens navn</h2>
+      <p class="medlemsTal">123456789456789 6789</p>
+      <div class="barcodeBackground">
+        <img class="barCode" src="img/barcode.png" alt="">
+      </div>
+      <div class="blackSquare"></div>
+    </div>
+
+    <h4>HTML</h4>
+    <textarea id="example11" class="styleguide_textarea">
+        <div class="medlemskort">
+            <h2 class="medlemsNavn">Malene Mortensen</h2>
+            <p class="medlemsTal">123456789456789 6789</p>
+            <div class="barcodeBackground">
+                <img class="barCode" src="img/barcode.png" alt="">
+            </div>
+            <div class="blackSquare"></div>
+        </div>
+      </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample11()">Kopier tekst</button>
+    </div><br>
+
+    <h4>CSS</h4>
+    <textarea id="example12" class="styleguide_textarea">
+          .underOverskrift2 {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            font-weight: 900;
+            color: var(--deepBlue);
+            margin-bottom: 20px;
+          }
+
+          .medlemskort {
+            background-color: var(--cardYellow);
+            text-align: center;
+            margin: 20px 0px;
+            border-radius: 20px;
+            border: none;
+            padding: 20px 0px;
+          }
+
+          .barCode {
+            width: 250px;
+          }
+
+          .barcodeBackground {
+            background-color: var(--white);
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .medlemsNavn, .medlemsTal {
+            color: var(--white);
+          }
+
+          .medlemsNavn {
+            margin: 10px;
+          }
+
+          .blackSquare {
+            background-color: var(--black);
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+          }
+
+          .marginClass {
+            margin: 20px;
+            text-align: center;
+          }
+
+          .marginClassLeft {
+            margin: 20px;
+          }
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample12()">Kopier tekst</button>
+    </div>
+    <hr class="lineBreak"><br>
+  </section>
+  <!-- -------------------------------IKONER------------------------------- -->
+  <section id="ikoner_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">IKONER</h1>
+    <p>Alle disse ikoner anvendes i kundeklubbens brugergrænseflade.</p>
+
+    <p>Dette er burgermenuens ikon.</p>
+    <i class="fa-solid fa-bars"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example13" class="styleguide_textarea">
+        <div class="burger-icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample13()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example14" class="styleguide_textarea">
+          .burger-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 20px;
+            background-color: var(--deepGreen);
+            padding: 10px;
+            border-radius: 15px;
+            margin: 20px;
+          }
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample14()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er brugerens ikon. Dette ikon anvendes i navbar.</p>
+    <i class="profile1 fa-regular fa-user"></i>
+    <h4>HTML</h4>
+    <textarea id="example15" class="styleguide_textarea">
+        <div class="profileFlex">
+          <i class="profile1 fa-regular fa-user"></i>
+          <div class="profile2">
+             <a class="profileName" href="#">Malene Mortensen</a>
+              <p class="profileTxt">Bronze</p>
+              <p class="profileTxt">235 Points</p>
+          </div>
+        </div>
+      </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample15()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example16" class="styleguide_textarea">
+          .profileFlex {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            bottom: 0;
+            position: absolute;
+            margin-bottom: 20px;
+            justify-content: center;
+          }
+          .profile1 {
+            font-size: 35px;
+            margin-right: 15px;
+          }
+          .profileTxt {
+            color: var(--white);
+          }
+          .profileName {
+            font-weight: 600;
+          }
+        </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample16()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er hjem ikonet. Dette ikon anvendes i navbar.</p>
+    <i class="fa fa-solid fa-house"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example17" class="styleguide_textarea">
+      <li><i class="fa fa-solid fa-house"></i><a href="index.html">Hjem</a></li>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample17()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example18" class="styleguide_textarea">
+      .fa-solid, .fas {
+          font-weight: 900;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample18()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er overbliks ikonet. Dette ikon anvendes i navbar.</p>
+    <i class="fa fa-solid fa-table-cells-large"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example19" class="styleguide_textarea">
+      <li><i class="fa fa-solid fa-table-cells-large"></i><a href="overblik.html">Overblik</a></li>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample19()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example20" class="styleguide_textarea">
+      .fa-solid, .fas {
+          font-weight: 900;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample20()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er indstillingers ikonet. Dette ikon anvendes i navbar.</p>
+    <i class="fa fa-solid fa-gear"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example21" class="styleguide_textarea">
+      <li><i class="fa fa-solid fa-gear"></i><a href="#">Indstillinger</a></li>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample21()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example22" class="styleguide_textarea">
+      .fa-solid, .fas {
+          font-weight: 900;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExampl22()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er hjælp ikonet. Dette ikon anvendes i navbar.</p>
+    <i class="fa fa-regular fa-circle-question"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example23" class="styleguide_textarea">
+      <li><i class="fa fa-regular fa-circle-question"></i><a href="faq.html">Hjælp</a></li>.
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample23()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example24" class="styleguide_textarea">
+      fa-solid, .fas {
+          font-weight: 900;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample24()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er tilbageknappens ikon. Dette ikon anvendes i navbar og på alle sider, undtagen index.</p>
+    <i class="fa-solid fa-arrow-left"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example25" class="styleguide_textarea">
+      <div class="backPage" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample25()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example26" class="styleguide_textarea">
+      .backPage {
+        background-color: var(--deepGreen);
+        padding: 10px;
+        border-radius: 15px;
+        margin: 15px;
+    }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample26()">Kopier tekst</button>
+    </div>
+    <h4>JS</h4>
+    <textarea id="example27" class="styleguide_textarea">
+      // Back button
+      function goBack() {
+         window.history.back();
+       }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample27()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er den højre pil, som bruges på knapperne. Denne pil er til de grønne knapper.</p>
+    <i class="fa-solid fa-arrow-right greenArrow"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example28" class="styleguide_textarea">
+      <i class="fa-solid fa-arrow-right greenArrow"></i>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample28()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example29" class="styleguide_textarea">
+      .greenArrow {
+        color: var(--deepGreen);
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample29()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er den højre pil, som bruges på knapperne. Denne pil er til de gule knapper.</p>
+    <i class="fa-solid fa-arrow-right loginArrow"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example30" class="styleguide_textarea">
+      <i class="fa-solid fa-arrow-right loginArrow"></i>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample30()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example31" class="styleguide_textarea">
+      .loginArrow {
+        color: var(--white);
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample31()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er checkmarket, som bruges på færdige belønninger.</p>
+    <i class="fa-solid fa-circle-check"></i><br>
+    <h4>HTML</h4>
+    <textarea id="example32" class="styleguide_textarea">
+      <i class="fa-solid fa-circle-check"></i>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample32()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example33" class="styleguide_textarea">
+        .fa-circle-check {
+          font-size: 30px;
+          color: var(--midGreen);
+          margin-right: 10px;
+        }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample33()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+  </section>
+  <!-- -------------------------------KASSER------------------------------- -->
+  <section id="kasser_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">IKONER</h1>
+    <p>Dette er de forskellige typer af kasser, som anvendes i kundeklubbens interface.</p>
+    <!-- ---------------------------------------------------------------------------- -->
+
+
+    <p>Dette er kassen fra index og landingpage siden. Denne kasse optræder kun på disse sider.</p>
+    <div class="landingBox">
+        <h4 class="boxText">Har du allerede en konto?</h4>
+        <button id="login" class="btn loginBtn">
+            <p class="btnText">Login</p>
+            <i class="fa-solid fa-arrow-right loginArrow"></i>
+        </button>
+    </div>
+    <div class="landingBox">
+        <h4 class="boxText">Tilmeld dig BrilleBaren Plus</h4>
+        <button id="opret" class="btn loginBtn">
+            <p class="btnText">Opret konto</p>
+            <i class="fa-solid fa-arrow-right loginArrow"></i>
+        </button>
+    </div>
+    <div class="landingBox">
+      <h2 class="boxText">Se dit medlemskort</h2>
+      <button class="btn btnIndex" id="medlemskort">
+          <p class="btnText">Medlemskort</p>
+          <i class="fa-solid fa-arrow-right loginArrow"></i>
+      </button>
+    </div><br>
+    <h4>HTML</h4>
+    <textarea id="example34" class="styleguide_textarea">
+      <div class="landingBox">
+          <h4 class="boxText">Har du allerede en konto?</h4>
+          <button id="login" class="btn loginBtn">
+              <p class="btnText">Login</p>
+              <i class="fa-solid fa-arrow-right loginArrow"></i>
+          </button>
+      </div>
+      <div class="landingBox">
+          <h4 class="boxText">Tilmeld dig BrilleBaren Plus</h4>
+          <button id="opret" class="btn loginBtn">
+              <p class="btnText">Opret konto</p>
+              <i class="fa-solid fa-arrow-right loginArrow"></i>
+          </button>
+      </div>
+      <div class="landingBox">
+        <h2 class="boxText">Se dit medlemskort</h2>
+        <button class="btn btnIndex" id="medlemskort">
+            <p class="btnText">Medlemskort</p>
+            <i class="fa-solid fa-arrow-right loginArrow"></i>
+        </button>
+      </div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample34()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example35" class="styleguide_textarea">
+      .landingBox {
+        background-color: var(--lightYellow);
+        margin: 10px;
+        padding: 30px 10px;
+        border-radius: 20px;
+        margin: 30px 20px;
+      }
+      .boxText {
+        text-align: center;
+        color: var(--deepBlue);
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample35()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+    <p>Dette er kassen fra Landingpage siden. Denne kasse optræder kun på Landingpage.html.</p>
+    <div onclick="openModal()" class="rewardBox color1">
+      <div class="rewardGrid">
+        <h3 class="boxText1 activeText">Gratis Brillerens</h3>
+        <h3 class="boxText1 activeTextGreen">Klar til brug</h3>
+      </div>
+      <div class="rewardGrid2">
+        <p class="procenter">100%</p>
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+    </div>
+
+    <h4>HTML</h4>
+    <textarea id="example36" class="styleguide_textarea">
+      <div onclick="openModal()" class="rewardBox color1">
+        <div class="rewardGrid">
+          <h3 class="boxText1 activeText">Gratis Brillerens</h3>
+          <h3 class="boxText1 activeTextGreen">Klar til brug</h3>
+        </div>
+        <div class="rewardGrid2">
+          <p class="procenter">100%</p>
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+      </div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample36()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example37" class="styleguide_textarea">
+      .rewardBox {
+        margin: 10px;
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .color1 {
+        background-color: var(--lightGreen);
+      }
+      .fa-circle-play {
+        font-size: 30px;
+        color: var(--midGreen);
+      }
+      .activeText {
+        font-weight: 700;
+      }
+      .activeTextGreen {
+        font-weight: 700;
+        color: var(--deepGreen);
+      }
+      .rewardGrid2 {
+        display: flex;
+        align-items: center;
+      }
+      .procenter {
+        margin: 10px;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample37()">Kopier tekst</button>
+    </div>
+    <br><hr class="lineBreak"><br>
+
+    <div class="rewardBox color2">
+      <div class="rewardGrid">
+        <h3 class="boxText1">10% rabat på næste køb</h3>
+        <p class="boxText1">Mangler 450 point</p>
+      </div>
+      <div class="rewardGrid2">
+        <p class="procenter">25%</p>
+        <i class="fa-solid fa-circle-play"></i>
+      </div>
+    </div>
+    <h4>HTML</h4>
+    <textarea id="example38" class="styleguide_textarea">
+      <div class="rewardBox color2">
+        <div class="rewardGrid">
+          <h3 class="boxText1">10% rabat på næste køb</h3>
+          <p class="boxText1">Mangler 450 point</p>
+        </div>
+        <div class="rewardGrid2">
+          <p class="procenter">25%</p>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample38()">Kopier tekst</button>
+    </div><br>
+    <h4>CSS</h4>
+    <textarea id="example39" class="styleguide_textarea">
+      .rewardBox {
+        margin: 10px;
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .color2 {
+        background-color: var(--lightBlue);
+      }
+      .fa-circle-play {
+        font-size: 30px;
+        color: var(--midGreen);
+      }
+      .activeText {
+        font-weight: 700;
+      }
+      .activeTextGreen {
+        font-weight: 700;
+        color: var(--deepGreen);
+      }
+      .rewardGrid2 {
+        display: flex;
+        align-items: center;
+      }
+      .procenter {
+        margin: 10px;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample39()">Kopier tekst</button>
+    </div>
+    <br><hr class="lineBreak"><br>
+
+    <div class="rewardBox color3">
+      <div class="rewardGrid">
+        <h3 class="boxText1">Gratis kop kaffe</h3>
+        <p class="boxText1">Mangler 200 point</p>
+      </div>
+      <div class="rewardGrid2">
+        <p class="procenter">10%</p>
+        <i class="fa-solid fa-circle-play"></i>
+      </div>
+    </div><br>
+    <h4>HTML</h4>
+    <textarea id="example40" class="styleguide_textarea">
+      <div class="rewardBox color3">
+        <div class="rewardGrid">
+          <h3 class="boxText1">Gratis kop kaffe</h3>
+          <p class="boxText1">Mangler 200 point</p>
+        </div>
+        <div class="rewardGrid2">
+          <p class="procenter">10%</p>
+          <i class="fa-solid fa-circle-play"></i>
+        </div>
+      </div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample40()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example41" class="styleguide_textarea">
+      .rewardBox {
+        margin: 10px;
+        padding: 30px 20px;
+        border-radius: 20px;
+        margin: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .color3 {
+        background-color: var(--lightYellow);
+      }
+      .fa-circle-play {
+        font-size: 30px;
+        color: var(--midGreen);
+      }
+      .activeText {
+        font-weight: 700;
+      }
+      .activeTextGreen {
+        font-weight: 700;
+        color: var(--deepGreen);
+      }
+      .rewardGrid2 {
+        display: flex;
+        align-items: center;
+      }
+      .procenter {
+        margin: 10px;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample41()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+        <p>Dette boksene som er anvendt på overblik siden.</p>
+        <div class="marginClassLeft">
+            <ul class="overblik"></ul>
+          <li>
+            <a class="overblikList" href="medlemskort.html">
+                <div class="colorCircle color1"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Mit Medlemskort</h2>
+                    <p class="overblikTxt">Se dit kort her</p>
+                </div>
+            </a>
+        </li>
+        <hr>
+        <li>
+            <a class="overblikList" href="#">
+                <div class="colorCircle color2"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Min konto</h2>
+                    <p class="overblikTxt">Navn, adresse mm.</p>
+                </div>
+            </a>
+        </li>
+        <hr>
+        <li>
+            <a class="overblikList" href="rewards.html">
+                <div class="colorCircle color3"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Mine belønninger</h2>
+                    <p class="overblikTxt">10 rabatter venter</p>
+                </div>
+            </a>
+        </li>
+        <hr>
+        <li>
+            <a class="overblikList" href="#">
+                <div class="colorCircle color1"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Mine fakturer</h2>
+                    <p class="overblikTxt">3 fakturer</p>
+                </div>
+            </a>
+        </li>
+        <hr>
+        <li>
+            <a class="overblikList" href="#">
+                <div class="colorCircle color2"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Mine produkter</h2>
+                    <p class="overblikTxt">4 produkter</p>
+                </div>
+            </a>
+        </li>
+        <hr>
+        <li>
+            <a class="overblikList" href="#">
+                <div class="colorCircle color3"></div>
+                <div class="listTxt">
+                    <h2 class="overblikTitel">Synsprøve resultater</h2>
+                    <p class="overblikTxt">2 resultater</p>
+                </div>
+            </a>
+        </li>
+        <h4>HTML</h4>
+        <textarea id="example42" class="styleguide_textarea">
+          <div class="marginClassLeft">
+              <ul class="overblik"></ul>
+            <li>
+              <a class="overblikList" href="medlemskort.html">
+                  <div class="colorCircle color1"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Mit Medlemskort</h2>
+                      <p class="overblikTxt">Se dit kort her</p>
+                  </div>
+              </a>
+          </li>
+          <hr>
+          <li>
+              <a class="overblikList" href="#">
+                  <div class="colorCircle color2"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Min konto</h2>
+                      <p class="overblikTxt">Navn, adresse mm.</p>
+                  </div>
+              </a>
+          </li>
+          <hr>
+          <li>
+              <a class="overblikList" href="rewards.html">
+                  <div class="colorCircle color3"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Mine belønninger</h2>
+                      <p class="overblikTxt">10 rabatter venter</p>
+                  </div>
+              </a>
+          </li>
+          <hr>
+          <li>
+              <a class="overblikList" href="#">
+                  <div class="colorCircle color1"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Mine fakturer</h2>
+                      <p class="overblikTxt">3 fakturer</p>
+                  </div>
+              </a>
+          </li>
+          <hr>
+          <li>
+              <a class="overblikList" href="#">
+                  <div class="colorCircle color2"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Mine produkter</h2>
+                      <p class="overblikTxt">4 produkter</p>
+                  </div>
+              </a>
+          </li>
+          <hr>
+          <li>
+              <a class="overblikList" href="#">
+                  <div class="colorCircle color3"></div>
+                  <div class="listTxt">
+                      <h2 class="overblikTitel">Synsprøve resultater</h2>
+                      <p class="overblikTxt">2 resultater</p>
+                  </div>
+              </a>
+          </li>
+        </textarea>
+        <div>
+          <button class="btnStyleguide" onclick="triggerExample42()">Kopier tekst</button>
+        </div>
+        <h4>CSS</h4>
+        <textarea id="example43" class="styleguide_textarea">
+            .fa-circle-check {
+              font-size: 30px;
+              color: var(--midGreen);
+              margin-right: 10px;
+            }
+        </textarea>
+        <div>
+          <button class="btnStyleguide" onclick="triggerExample43()">Kopier tekst</button>
+        </div><br><hr class="lineBreak"><br>
+    <!-- ---------------------------------------------------------------------------- -->
+  </section>
+  <!-- -------------------------------FORMULARER------------------------------- -->
+  <section id="formularer_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">FORMULARER</h1>
+    <p>Disse to formularer bruges som log ind og tilmeldingsformularerne.</p><br><br>
+    <p>Dette er login formularen.</p>
+    <form class="loginForm">
+      <label class="inputLabel">E-mail</label>
+      <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+      <br>
+      <label class="inputLabel">Password</label>
+      <input type="password" class="form-control" name="password" placeholder="Skriv din adgangskode" required="">
+      <a class="forgotPassword" href="#">Glemt dit password?</a><br>
+      <p>Ingen konto endnu? <a class="loginCenterTxt" href="opret.html">Opret konto.</a></p>
+      <button class="btn greenLoginBtn greenBtn" type="submit" onclick="login()">
+        <p class="activeTextGreen greenBtnTxt">Log ind</p>
+        <i class="fa-solid fa-arrow-right greenArrow"></i>
+      </button>
+      <span class="loginCenterTxt txtLine"> Eller anvend </span>
+      <div class="sociallogin">
+        <button class="otherLogin" href="#typografi_klik"><img src="img/google.png" alt="google logo"></button>
+        <button class="otherLogin" href="#typografi_klik"><img src="img/facebook.png" alt="facebook logo"></button>
+      </div>
+    </form><br>
+    <h4>HTML</h4>
+    <textarea id="example44" class="styleguide_textarea">
+      <form class="loginForm">
+        <label class="inputLabel">E-mail</label>
+        <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+        <br>
+        <label class="inputLabel">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Skriv din adgangskode" required="">
+        <a class="forgotPassword" href="#">Glemt dit password?</a><br>
+        <p>Ingen konto endnu? <a class="loginCenterTxt" href="opret.html">Opret konto.</a></p>
+        <button class="btn greenLoginBtn greenBtn" type="submit" onclick="login()">
+          <p class="activeTextGreen greenBtnTxt">Log ind</p>
+          <i class="fa-solid fa-arrow-right greenArrow"></i>
+        </button>
+        <span class="loginCenterTxt txtLine"> Eller anvend </span>
+        <div class="sociallogin">
+          <button class="otherLogin" href="#"><img src="img/google.png" alt="google logo"></button>
+          <button class="otherLogin" href="#"><img src="img/facebook.png" alt="facebook logo"></button>
+        </div>
+      </form>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample44()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example45" class="styleguide_textarea">
+      .loginLogo {
+        width: 220px;
+        padding-bottom: 20px;
+      }
+
+      .loginMaskot {
+        width: 100px;
+      }
+
+      .loginImg {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .loginForm {
+        padding: 20px;
+        display: grid;
+      }
+
+      .inputLabel {
+        margin-bottom: 10px;
+      }
+
+      .checkbox {
+        margin-bottom: 30px;
+        display: flex;
+        color: var(--deepBlue);
+      }
+
+      .forgotPassword {
+        text-decoration: none;
+        color: var(--deepGreen);
+        margin-top: 10px;
+        font-style: italic;
+        font-size: 12px;
+      }
+
+      .form-control {
+        position: relative;
+        font-size: 16px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid var(--lineGrey);
+
+      }
+
+      .loginCenterTxt {
+        margin-top: 20px;
+        text-align: center;
+        color: var(--deepBlue);
+      }
+
+      .txtLine:after,
+      .txtLine:before {
+        content: "\00a0\00a0\00a0\00a0\00a0";
+        text-decoration: line-through;
+      }
+
+      .socialLinks {
+        display: flex;
+        justify-content: center;
+      }
+
+      .fbLog, .googleLog {
+        background-color: var(--lightYellow);
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: none;
+        text-align: center;
+        line-height: 55px;
+        margin: 20px;
+      }
+
+      .googleLink, .fbLink {
+        color: var(--deepYellow);
+        font-size: 20px;
+      }
+
+      ::placeholder {
+        opacity: 50%;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample45()">Kopier tekst</button>
+    </div><br><hr class="lineBreak"><br>
+
+  <!-- ---------------------------------------------------------------------------- -->
+  <p>Dette er opret konto formularen.</p>
+  <form class="loginForm">
+      <label class="inputLabel">E-mail</label>
+      <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+      <br>
+      <label class="inputLabel">Fornavn</label>
+      <input type="text" class="form-control" name="firstname" placeholder="Skriv dit fornavn" required="">
+      <br>
+      <label class="inputLabel">Efternavn</label>
+      <input type="text" class="form-control" name="username" placeholder="Skriv dit efternavn" required="">
+      <br>
+      <label class="inputLabel">Adgangskode</label>
+      <input type="password" class="form-control" name="password" placeholder="Skriv en adgangskode" required="">
+      <br>
+      <label class="inputLabel">Gentag adgangkode</label>
+      <input type="password" class="form-control" name="password" placeholder="Gentag adgangskode" required="">
+
+          <div class="dateForm">
+              <span>
+                  <label for="day">Dag</label>
+                  <select class="day" name="day" id="day"></select>
+              </span>
+              <span class="shorterInput" >
+                  <label for="month">Måned</label>
+                  <select class="month" name="month" id="month"></select>
+              </span>
+              <span>
+                  <label for="year">År</label>
+                  <select class="year" name="year" id="year"></select>
+              </span>
+          </div>
+
+      <div class="interest">
+          <label class="interestbox">
+              <span class="checkTxt">Briller</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+          <label class="interestbox">
+              <span class="checkTxt">Solbriller</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+          <label class="interestbox">
+              <span class="checkTxt">Linser</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+      </div>
       <br><br>
-      <button class="btnStyleguideMenu" href="#typografi_klik">Typografi</button>
-      <button class="btnStyleguideMenu" href="#logo_klik">Logo</button>
-      <button class="btnStyleguideMenu" href="#medlemskort_klik">Medlemskort</button>
-      <button class="btnStyleguideMenu" href="#ikoner_klik">Ikoner</button>
-      <button class="btnStyleguideMenu" href="#kasser_klik">Kasser / box</button>
-      <button class="btnStyleguideMenu" href="#formularer_klik">Formularer</button>
-      <button class="btnStyleguideMenu" href="#faq_klik">FAQ</button>
-      <button class="btnStyleguideMenu" href="#animationer_klik">Animationer</button>
+      <div class="intMails">
+          <label class="sendMails">
+              <span class="checkTxt">Rabatter og tilbud</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+          <label class="sendMails">
+              <span class="checkTxt">Nye produkter</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+          <label class="sendMails">
+              <span class="checkTxt">Dine kuponer</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+          <label class="sendMails">
+              <span class="checkTxt">Samarbejdspartnere</span>
+              <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+          </label>
+      </div>
+      <br><br>
 
-<section id="typografi_klik">
-<h1 class="styleguide_overskrift">TYPOGRAFI</h1>
-<p>Dette er de pågældende typografier, som er anvendt på webapplikationen.
-  webapplikationen bruger samme font som hjemmesiden, som er Montserrat.
-  Det er en geometrisk sans-serif skrifttype, som er en yderst moderne skrifttype.</p><br>
-<h1 style="margin-top:0;" class="underOverskrift">Overskrift 1</h1>
-<p>Dette er den primære overskrift til den første overskrift på siden.
-Denne overskrift vil primært altid være hvid, når den indsættes, da den oftes fremstår på en grøn baggrund.
-Er dette ikke tilfældet kan der bruges en class som hedder: underOverskrift.</p><br>
+      <label class="vilkr">
+          <p>Ved at lave en konto acceptere du vores <a class="greenLink" href="#">Vilkår & betingelser</a> og <a class="greenLink" href="#">Privathedspolitik</a></p>
+          <input type="checkbox" value="terms" class="checkboxSquare" name="terms">
+      </label>
 
-<h4>HTML</h4>
-<textarea id="example" class="styleguide_textarea">
- <h1>Skriv overskrift her</h1>
-</textarea>
-<div>
-  <button class="btnStyleguide" onclick="triggerExample()">Kopier tekst</button>
-</div>
+      <span class="loginCenterTxt txtLine"> Eller anvend </span>
 
-<h4>CSS</h4>
-<textarea id="example1" class="styleguide_textarea">
-  h1{
-    font-size: 34px;
-    font-weight: 900;
-    text-align: center;
-    display: inline-block;
-    color: var(--white);
-    padding: 0 20px 0 20px;
-  }
+      <div class="sociallogin">
+        <button class="otherLogin" href="#typografi_klik"><img src="img/google.png" alt="google logo"></button>
+        <button class="otherLogin" href="#typografi_klik"><img src="img/facebook.png" alt="facebook logo"></button>
+      </div>
 
-  .underOverskrift {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 900;
-    color: var(--deepBlue);
-  }
-</textarea>
-<div>
-  <button class="btnStyleguide" onclick="triggerExample1()">Kopier tekst</button>
-</div>
-<br><br>
-<h2>Overskrift 2</h2>
-<p>Dette er den sekundære overskrift til overskrifter på siderne.
-Denne overskrift bruges som inddeling af sektioner på siderne, når der skal være
-være en overskrift på en sektion, som ikke skal være meget iøjenfaldende.</p><br>
-<h4>HTML</h4>
-<textarea id="example" class="styleguide_textarea">
- <h1>Skriv overskrift her</h1>
-</textarea>
-<div>
-  <button class="btnStyleguide" onclick="triggerExample()">Kopier tekst</button>
-</div>
+      <button class="btn greenLoginBtn greenBtn" type="submit">
+          <p class="activeTextGreen greenBtnTxt">Opret Konto</p>
+          <i class="fa-solid fa-arrow-right greenArrow"></i>
+      </button>
+  </form><br>
+  <h4>HTML</h4>
+  <textarea id="example46" class="styleguide_textarea">
+    <form class="loginForm">
+        <label class="inputLabel">E-mail</label>
+        <input type="text" class="form-control" name="username" placeholder="Skriv din Email" required="">
+        <br>
+        <label class="inputLabel">Fornavn</label>
+        <input type="text" class="form-control" name="firstname" placeholder="Skriv dit fornavn" required="">
+        <br>
+        <label class="inputLabel">Efternavn</label>
+        <input type="text" class="form-control" name="username" placeholder="Skriv dit efternavn" required="">
+        <br>
+        <label class="inputLabel">Adgangskode</label>
+        <input type="password" class="form-control" name="password" placeholder="Skriv en adgangskode" required="">
+        <br>
+        <label class="inputLabel">Gentag adgangkode</label>
+        <input type="password" class="form-control" name="password" placeholder="Gentag adgangskode" required="">
 
+            <div class="dateForm">
+                <span>
+                    <label for="day">Dag</label>
+                    <select class="day" name="day" id="day"></select>
+                </span>
+                <span class="shorterInput" >
+                    <label for="month">Måned</label>
+                    <select class="month" name="month" id="month"></select>
+                </span>
+                <span>
+                    <label for="year">År</label>
+                    <select class="year" name="year" id="year"></select>
+                </span>
+            </div>
 
-</section>
+        <div class="interest">
+            <label class="interestbox">
+                <span class="checkTxt">Briller</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+            <label class="interestbox">
+                <span class="checkTxt">Solbriller</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+            <label class="interestbox">
+                <span class="checkTxt">Linser</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+        </div>
+        <br><br>
+        <div class="intMails">
+            <label class="sendMails">
+                <span class="checkTxt">Rabatter og tilbud</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+            <label class="sendMails">
+                <span class="checkTxt">Nye produkter</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+            <label class="sendMails">
+                <span class="checkTxt">Dine kuponer</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+            <label class="sendMails">
+                <span class="checkTxt">Samarbejdspartnere</span>
+                <input type="checkbox" value="checkbox-square" class="checkboxSquare" name="checkbox-square">
+            </label>
+        </div>
+        <br><br>
 
+        <label class="vilkr">
+            <p>Ved at lave en konto acceptere du vores <a class="greenLink" href="#">Vilkår & betingelser</a> og <a class="greenLink" href="#">Privathedspolitik</a></p>
+            <input type="checkbox" value="terms" class="checkboxSquare" name="terms">
+        </label>
 
-<section id="logo_klik">
+        <span class="loginCenterTxt txtLine"> Eller anvend </span>
 
-</section>
+        <div class="sociallogin">
+          <button class="otherLogin" href="#typografi_klik"><img src="img/google.png" alt="google logo"></button>
+          <button class="otherLogin" href="#typografi_klik"><img src="img/facebook.png" alt="facebook logo"></button>
+        </div>
 
+        <button class="btn greenLoginBtn greenBtn" type="submit">
+            <p class="activeTextGreen greenBtnTxt">Opret Konto</p>
+            <i class="fa-solid fa-arrow-right greenArrow"></i>
+        </button>
+    </form>
+  </textarea>
+  <div>
+    <button class="btnStyleguide" onclick="triggerExample46()">Kopier tekst</button>
+  </div>
+  <h4>CSS</h4>
+  <textarea id="example47" class="styleguide_textarea">
+    .dateForm {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
 
-<section id="medlemskort_klik">
+    .year, .month, .day {
+      padding: 10px;
+      width: 100%;
+      border-color: var(--lineGrey);
+      border-radius: 10px;
+      -webkit-appearance: none;
+    }
 
-</section>
+    form span {
+      display: block;
+    }
 
+    .error {
+      color: red;
+      font-size: 12px;
+      text-decoration: none;
+      font-style: italic;
+    }
 
-<section id="ikoner_klik">
+    .checkboxSquare{
+      height: 20px;
+      width: 20px;
+      border: 5px;
+      margin-left: 10px;
+    }
 
-</section>
+    .checkboxSquare2 {
+      height: 20px;
+      width: 45px;
+      border: 5px;
+      margin-left: 10px;
+    }
 
+    .interest {
+      display: flex;
+      padding: 15px;
+      margin-top: 10px;
+      justify-content: space-around;
+      border-radius: 10px;
+      border: 1px solid var(--lineGrey);
 
-<section id="kasser_klik">
+    }
 
-</section>
+    .interestbox {
+      display: flex;
+      color: var(--deepBlue);
+    }
 
+    .sendMails {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0px;
+    }
 
-<section id="formularer_klik">
+    .intMails {
+      border: 1px solid var(--lineGrey);
+      padding: 10px;
+      border-radius: 10px;
+    }
 
-</section>
+    .vilkr {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+    }
+  </textarea>
+  <div>
+    <button class="btnStyleguide" onclick="triggerExample47()">Kopier tekst</button>
+  </div><br><hr class="lineBreak"><br>
 
+  <!-- ---------------------------------------------------------------------------- -->
 
-<section id="faq_klik">
+  </section>
+  <!-- -------------------------------FAQ------------------------------- -->
+  <section id="faq_klik">
+    <h1 style="margin-top:0;" class="underOverskrift">FAQ</h1>
+    <p>Dette er FAQ sektionen, som kan findes under hjælp.</p><br>
+    <div class='faq'>
+      <input id='faq-a' type='checkbox' class="read-more">
+      <label for='faq-a'>
+        <p class="faq-heading">Hvordan ændre jeg mit medlemsskab?</p>
+        <p class="faq-text">Under min konto vælger du din plan, hvorefter du kan ændre den om nødvendigt. Dog er der en opsigelsesperiode på 1 måned på Sølv og Guld planen.</p>
+      </label>
+      <input id='faq-b' type='checkbox'>
+      <label for='faq-b'>
+        <p class="faq-heading">Hvad koster det at være medlem?</p>
+        <p class="faq-text">Det er gratis at være medlem, men ønsker du at have flere fordele end hvad Bronze planen inkludere, skal du blot være Sølv eller Guld planen. Du kan læse mere om dette <a href="#planer">her.</a></p>
+      </label>
+      <input id='faq-c' type='checkbox'>
+      <label for='faq-c'>
+        <p class="faq-heading">Hvilke fordele er der ved klubben?</p>
+        <p class="faq-text">Der er massere af fordele ved at være medlem af Brillebaren Plus, herunder optjening af points og indløs disse til
+    dine ønsket rabatter, belønninger invitation til eksklusive events og meget mere!</p>
+      </label>
+      <input id='faq-d' type='checkbox'>
+      <label for='faq-d'>
+        <p class="faq-heading">Hvad er bindingsperioden?</p>
+        <p class="faq-text">Bindingsperioden på Sølv og Guld planen er på 3 måneder. Ønsker du at ændre din plan efterfølgende kan du gøre det igennem <a href="#minkonto">Min konto</a>hvor du kan vælge den plan, som passer bedst til dine behov.</p>
+      </label>
+      <input id='faq-e' type='checkbox'>
+      <label for='faq-e'>
+        <p class="faq-heading">Hvordan opsiger jeg Sølv eller Guld planen?</p>
+        <p class="faq-text">Under <a href="#minkonto">Min Konto</a> kan du ændre din plan til Bronze planen, dog mister du dine ekslusive tilbud som Sølv eller Guld medlem.</p>
+      </label>
+      <input id='faq-f' type='checkbox'>
+      <label for='faq-f'>
+        <p class="faq-heading">Hvor mange points optjener man?</p>
+        <p class="faq-text">Som Bronze medlem optjener du 1 per krone du bruger i butikken. Dog som Sølv og Guld medlem optjener du dobbelt så mange points, så du hurtigere kan få belønningerne.</p>
+      </label>
+    </div>
+    <div class="mereInfo">
+      <h2>Mangler du stadig svar?</h2>
+      <br><p>Kontakt os på <a class="greenLink" href="tel:+4566156967">+45 6615 6967</a></p>
+      <p>eller på <a class="greenLink" href="mailto:info@brillebaren.dk">info@brillebaren.dk</a></p>
+    </div>
+    <h4>HTML</h4>
+    <textarea id="example48" class="styleguide_textarea">
+      <div class='faq'>
+        <input id='faq-a' type='checkbox' class="read-more">
+        <label for='faq-a'>
+          <p class="faq-heading">Hvordan ændre jeg mit medlemsskab?</p>
+          <p class="faq-text">Under min konto vælger du din plan, hvorefter du kan ændre den om nødvendigt. Dog er der en opsigelsesperiode på 1 måned på Sølv og Guld planen.</p>
+        </label>
+        <input id='faq-b' type='checkbox'>
+        <label for='faq-b'>
+          <p class="faq-heading">Hvad koster det at være medlem?</p>
+          <p class="faq-text">Det er gratis at være medlem, men ønsker du at have flere fordele end hvad Bronze planen inkludere, skal du blot være Sølv eller Guld planen. Du kan læse mere om dette <a href="#planer">her.</a></p>
+        </label>
+        <input id='faq-c' type='checkbox'>
+        <label for='faq-c'>
+          <p class="faq-heading">Hvilke fordele er der ved klubben?</p>
+          <p class="faq-text">Der er massere af fordele ved at være medlem af Brillebaren Plus, herunder optjening af points og indløs disse til
+  dine ønsket rabatter, belønninger invitation til eksklusive events og meget mere!</p>
+        </label>
+        <input id='faq-d' type='checkbox'>
+        <label for='faq-d'>
+          <p class="faq-heading">Hvad er bindingsperioden?</p>
+          <p class="faq-text">Bindingsperioden på Sølv og Guld planen er på 3 måneder. Ønsker du at ændre din plan efterfølgende kan du gøre det igennem <a href="#minkonto">Min konto</a>hvor du kan vælge den plan, som passer bedst til dine behov.</p>
+        </label>
+        <input id='faq-e' type='checkbox'>
+        <label for='faq-e'>
+          <p class="faq-heading">Hvordan opsiger jeg Sølv eller Guld planen?</p>
+          <p class="faq-text">Under <a href="#minkonto">Min Konto</a> kan du ændre din plan til Bronze planen, dog mister du dine ekslusive tilbud som Sølv eller Guld medlem.</p>
+        </label>
+        <input id='faq-f' type='checkbox'>
+        <label for='faq-f'>
+          <p class="faq-heading">Hvor mange points optjener man?</p>
+          <p class="faq-text">Som Bronze medlem optjener du 1 per krone du bruger i butikken. Dog som Sølv og Guld medlem optjener du dobbelt så mange points, så du hurtigere kan få belønningerne.</p>
+        </label>
+      </div>
+      <div class="mereInfo">
+        <h2>Mangler du stadig svar?</h2>
+        <br><p>Kontakt os på <a class="greenLink" href="tel:+4566156967">+45 6615 6967</a></p>
+        <p>eller på <a class="greenLink" href="mailto:info@brillebaren.dk">info@brillebaren.dk</a></p>
+      </div>
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample48()">Kopier tekst</button>
+    </div>
+    <h4>CSS</h4>
+    <textarea id="example49" class="styleguide_textarea">
+      .faq-heading {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--deepBlue);
+        padding: 10px 10px 0 10px !important;
+      }
 
-</section>
+      .faq-text {
+        color: var(--deepBlue);
+        width: 85%;
+        padding-left: 10px;
+        margin-bottom: 40px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
 
+      .read-more {
+        display: none;
+      }
 
-<section id="animationer_klik">
+      .faq input[type="checkbox"]:checked+label .faq-text {
+        color: var(--deepBlue);
+        white-space: unset;
+      }
 
-</section>
+      .faq {
+        width: 100%;
+        margin: 40px auto 20px auto;
+        position: relative;
+      }
 
-  </body>
+      .faq label {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        height: 50px;
+        border-bottom: 1px solid #E1E1E1;
+        max-width: 95%;
+        margin: 0 auto 0 auto;
+      }
+
+      .faq input[type="checkbox"] {
+        display: none;
+      }
+
+      .faq input[type="checkbox"]:checked+label {
+        display: block;
+        height: 135px;
+        transition: height 0.8s;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .faq input[type='checkbox']:not(:checked)+label {
+        display: block;
+        transition: height 0.8s;
+        height: 60px;
+        -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      .faq input[type='checkbox']:not(:checked) .faq-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;
+      }
+
+      .faq p a {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--deepGreen) !important;
+      }
+      .mereInfo {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+      }
+    </textarea>
+    <div>
+      <button class="btnStyleguide" onclick="triggerExample49()">Kopier tekst</button>
+    </div><br><hr class="lineBreak">
+    <br><hr class="lineBreak"><br>
+  </section>
+</body>
 </html>
