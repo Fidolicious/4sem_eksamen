@@ -889,6 +889,8 @@ body.modal-open {
 
 .inputLabel {
   margin-bottom: 10px;
+  margin-top: 20px;
+  color: var(--deepBlue);
 }
 
 .checkbox {
@@ -945,26 +947,37 @@ body.modal-open {
 }
 
 .month{
-  padding: 25px 10px;
+  padding: 10px;
   width: 90%;
   border-color: var(--lineGrey);
   border-radius: 10px;
   -webkit-appearance: none;
+  background-color: var(--white);
+  color: var(--deepBlue);
 }
 
 .year{
-  padding: 25px 10px;
+  padding: 10px;
   width: 100%;
   border-color: var(--lineGrey);
   border-radius: 10px;
   -webkit-appearance: none;
+  background-color: var(--white);
+  color: var(--deepBlue);
 }
 .day {
-  padding: 25px 10px;
+  padding: 10px;
   width: 90%;
   border-color: var(--lineGrey);
   border-radius: 10px;
   -webkit-appearance: none;
+  background-color: var(--white);
+  color: var(--deepBlue);
+}
+
+.day option, .year option, .month option {
+  background-color: #F5F5F5;
+  color: var(--deepBlue);
 }
 
 form span {
@@ -1006,6 +1019,10 @@ form span {
 
 }
 
+.interestTxt {
+  margin-top: 20px;
+}
+
 .interestbox {
   display: flex;
   color: var(--deepBlue);
@@ -1021,6 +1038,8 @@ form span {
   border: 1px solid var(--lineGrey);
   padding: 10px;
   border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .vilkr {
