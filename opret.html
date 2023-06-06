@@ -45,22 +45,20 @@
             <div class="dateForm">
                 <span>
                   <label for="day">Dag</label>
-                  <select class="day" name="day" id="day" required=""></select>
+                  <select class="day" name="day" id="day"></select>
                 </span>
                 <span>
                   <label for="month">Måned</label>
-                  <select class="month" name="month" id="month" required=""></select>
+                  <select class="month" name="month" id="month"></select>
                 </span>
                 <span>
                   <label for="year">År</label>
-                  <select class="year" name="year" id="year" required=""></select>
+                  <select class="year" name="year" id="year"></select>
                 </span>
               </div>
               <span id="errorMessage" class="error"></span>
               
-                                      
-                
-                <br>
+            <br>
             <p>Mest interesseret i (Friviligt):</p>
             <div class="interest">
                 <label class="interestbox">
@@ -102,24 +100,21 @@
             </div>
             <br><br>
 
-            <label class="vilkr">
+            <div class="vilkr">
                 <p>Ved at lave en konto acceptere du vores <br> <a class="greenLink" href="#">Vilkår & betingelser</a> og <a class="greenLink" href="#">Privathedspolitik</a></p>
                 <input type="checkbox" value="terms" class="checkboxSquare" name="terms">
-            </label>
+            </div>
 
             <span class="loginCenterTxt txtLine"> Eller anvend </span>
 
-            <div class="socialLinks">
-                <a class="googleLog" href="#">
-                    <i class=" googleLink fa-brands fa-google"></i>
-                </a>
-                <a class="fbLog" href="#">
-                    <i class=" fbLink fa-brands fa-facebook-f"></i>
-                </a>
+            <div class="sociallogin">
+                <a href="#" class="otherLogin"><img src="img/google.png" alt="google logo"></a>
+                <a href="#" class="otherLogin2"><img src="img/facebook.png" alt="facebook logo"></a>
+        
             </div>
 
-            <button id="changePlan" class="btn greenLoginBtn greenBtn" type="submit">
-                <p class="activeTextGreen greenBtnTxt">Opret Konto</p>
+            <button id="changePlan" class="greenLoginBtn greenBtn" type="submit">
+                    Opret Konto
                 <i class="fa-solid fa-arrow-right greenArrow"></i>
             </button>
         </form>

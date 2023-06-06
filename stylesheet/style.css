@@ -32,13 +32,9 @@ h3 {
   color: var(--deepBlue);
 }
 
-p {
+p, span {
   font-size: 14px;
   font-weight: 300;
-  color: var(--deepBlue);
-}
-
-span {
   color: var(--deepBlue);
 }
 
@@ -161,7 +157,7 @@ h4 {
 }
 
 
-/* Landingpage */
+/* Index */
 #landingBack {
   margin-bottom: 18vh;
 }
@@ -221,41 +217,63 @@ h4 {
 }
 
 
-.btn {
+.yellowBtn {
   display: flex;
   background-color: var(--deepYellow);
   padding: 10px;
   border: none;
   border-radius: 15px;
   width: 150px;
-  text-decoration: none;
-  margin-top: 10px !important;
   margin: auto;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
 }
+
+.yellow {
+  display: flex;
+  background-color: var(--deepYellow);
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  width: 150px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
 .sociallogin {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.loginBtn {
-  display: flex;
-  margin: auto;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.otherLogin {
+
+.otherLogin, .otherLogin2 {
   background-color: var(--midYellow);
     padding: 10px;
     border: none;
     border-radius: 15px;
-    width: 162.5px;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 10px !important;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .otherLogin img {
-  width: 80px;
-  height: auto;
+  height: 23px;
+}
+
+.otherLogin2 img {
+  height: 17px;
 }
 
 .btnText {
@@ -263,13 +281,19 @@ h4 {
   font-weight: 600;
 }
 
-.loginArrow {
+.whiteArrow {
   color: var(--white);
+  font-size: 20px;
+  margin-left: 10px;
 }
-.fa-arrow-right:before {
+
+
+/* .fa-arrow-right:before {
     content: "\f061";
     font-size: 20px;
-}
+    margin-left: 10px;
+} */
+
 .landingText {
   color: var(--deepBlue);
   text-align: center;
@@ -423,10 +447,10 @@ h4 {
     width: 90%;
   }
 
-  /* Index page */
+  /* LandingPage */
   .btnIndex{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     align-items: center;
     margin-top: 20px !important;
   }
@@ -453,8 +477,13 @@ h4 {
   background-color: var(--lightYellow);
 }
 
-.activeText {
+/* .activeText {
   font-weight: 700;
+} */
+
+.boxText1 {
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .activeTextGreen {
@@ -487,6 +516,7 @@ h4 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  display: inline-block;
 }
 
 .read-more {
@@ -565,7 +595,6 @@ h4 {
 .fa-circle-check {
   font-size: 34px;
   color: var(--midGreen);
-  margin-right: 10px;
 }
 
 .almost {
@@ -574,7 +603,7 @@ h4 {
 
 .rewardBox1 {
   margin: 10px;
-  padding: 30px 10px;
+  padding: 30px 20px;
   border-radius: 20px;
   margin: 20px 20px;
   display: flex;
@@ -582,11 +611,14 @@ h4 {
   justify-content: space-between;
   border: none;
   width: 90%;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--deepBlue);
 }
 
-.rewardText {
+/* .rewardText {
   margin-left: 10px;
-}
+} */
 
 .circle {
   border-radius: 100%;
@@ -622,15 +654,14 @@ footer {
   padding: 20px;
   border: none;
   border-radius: 15px;
-  text-decoration: none;
   margin-top: 30px !important;
   width: 100%;
-  margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   justify-content:center;
+  color: var(--deepGreen);
+  font-weight: 700;
+  font-size: 15px;
 }
 
 .colorCircle {
@@ -696,11 +727,6 @@ hr {
   text-align: center;
 }
 
-.greenBtnTxt {
-  color: var(--deepGreen);
-  font-weight: 700;
-}
-
 .qrCode {
   width: 200px;
   display: block;
@@ -709,6 +735,10 @@ hr {
 }
 
 /* Modal styles */
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -785,17 +815,6 @@ hr {
   text-align: center;
 }
 
-.greenBtn2 {
-  background-color: var(--lightGreen);
-  padding: 20px;
-  border: none;
-  border-radius: 15px;
-  text-decoration: none;
-  margin-top: 30px !important;
-  width: 100%;
-
-}
-
 .rewardActivatet {
   display: flex;
   justify-content: center;
@@ -815,6 +834,17 @@ hr {
 }
 
 .close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--midGreen);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.close-btn-back {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -885,7 +915,7 @@ hr {
 }
 
 .loginCenterTxt {
-  margin-top: 20px;
+  margin: 20px 0;
   text-align: center;
   color: var(--deepBlue);
 }
@@ -896,21 +926,6 @@ hr {
   text-decoration: line-through;
 }
 
-.socialLinks {
-  display: flex;
-  justify-content: center;
-}
-
-.fbLog, .googleLog {
-  background-color: var(--lightYellow);
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  border: none;
-  text-align: center;
-  line-height: 55px;
-  margin: 20px;
-}
 
 .googleLink, .fbLink {
   color: var(--deepYellow);
@@ -930,24 +945,26 @@ hr {
 }
 
 .month{
-  padding: 10px;
+  padding: 25px 10px;
   width: 90%;
   border-color: var(--lineGrey);
   border-radius: 10px;
+  -webkit-appearance: none;
 }
 
 .year{
-  padding: 10px;
+  padding: 25px 10px;
   width: 100%;
   border-color: var(--lineGrey);
   border-radius: 10px;
   -webkit-appearance: none;
 }
 .day {
-  padding: 10px;
+  padding: 25px 10px;
   width: 90%;
   border-color: var(--lineGrey);
   border-radius: 10px;
+  -webkit-appearance: none;
 }
 
 form span {
@@ -959,6 +976,10 @@ form span {
   font-size: 12px;
   text-decoration: none;
   font-style: italic;
+}
+
+.checkTxt {
+  font-weight: 500;
 }
 
 .checkboxSquare{
